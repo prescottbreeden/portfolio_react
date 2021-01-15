@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1 rem = 10 pixels
+
+	@include respond(tab-land) {
+		font-size: 56.25%
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%
+	}
+
+}
+
+body {
+    background-color: $color-black;
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+    
+    &__title {
+        text-align: center;
+    }
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+::selection {
+	background-color: $color-red-light;
+	color: $color-white;
+}

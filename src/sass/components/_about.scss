@@ -1,0 +1,119 @@
+.about {
+  padding: 6rem 5rem;
+  background-color: $color-grey-light;
+
+  @include respond(phone){
+    padding-top: 3rem;
+  }
+
+  &__text-box {
+    padding-top: 6rem;
+    display: flex;
+    margin-bottom: 4rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3rem;
+    }
+  }
+
+  &__heading {
+    flex: 3 20%;
+  }
+
+  &__blurb {
+    margin-top: 1rem;
+    flex: 5 40%;
+    text-align: justify;
+  }
+}
+
+.services {
+  padding: 3rem 5rem;
+  background-image: linear-gradient(to right,
+                      rgba($color-black, .0),
+                      rgba($color-black, .0)), 
+                      url('assets/img/turtle.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: $color-white;
+
+  @include respond(phone) {
+    padding: 3rem 1rem;
+    background-image: linear-gradient(to right,
+                        rgba($color-black, .5),
+                        rgba($color-black, .5)), 
+                        url('assets/img/turtle.jpg');
+  }
+
+  &--heading {
+    color: $color-white;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &--container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
+  }
+
+  &--list {
+    list-style: none;
+    padding: 2rem;
+  }
+
+  &--front-end {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  &--backend {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  &--db {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+}
+
+.cube {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 3rem 0;
+
+    h3 {
+      display: inline-block;
+      position: absolute;
+      margin-top: -3rem;
+    }
+  }
+
+  &__img {
+    height: 15rem;
+    width: auto;
+
+    @include respond(phone) {
+      height: 12rem;
+
+    }
+  }
+}

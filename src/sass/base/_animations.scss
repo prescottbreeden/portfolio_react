@@ -1,0 +1,47 @@
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: $color-white;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(50rem);
+	}
+	100% {
+		transform: translateX(50rem);
+	}
+}
+
+@keyframes flip {
+	0% {
+		transform: rotateY(-180deg);
+	}	
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+
+	}
+}

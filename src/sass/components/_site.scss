@@ -1,0 +1,181 @@
+.site {
+  padding: 3rem 5rem;
+  background-color: $color-grey-light;
+
+  @include respond(phone)	{
+    padding: 3rem 0rem;		
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__wrapper {
+    margin-bottom: 6rem;
+
+    @include respond(phone){
+      margin-bottom: 3rem;		
+    }
+  }
+
+  &__container {
+    border-top: 1px solid $color-black-light;
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone){
+      flex-direction: column;		
+    }
+
+    &--heading {
+      text-align: center;
+      width: 30%;
+
+      h3 {
+        background-color: $color-black-light;
+        color: $color-white;
+        display: inline-block;
+        padding: 0 2rem;
+        border-radius: 0 0 4px 4px;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        @include respond(phone){
+          width: 100%;	
+          border-radius: 0;
+          line-height: 4rem;
+        }
+      }
+
+      @include respond(phone){
+        width: 100%;	
+      }
+    }
+
+    &--text {
+      border-top: 1px solid $color-primary;
+      max-height: 0;
+      transition: all .5s;
+
+      & > p {
+        transition: all .5s;
+        padding: 0 1rem;
+        opacity: 0;
+      }
+
+      &-box {
+        width: 60%;
+
+        @include respond(phone)	{
+          width: 100%;	
+        }
+      }
+    }
+
+    &--tool-box {
+      margin-top: 6rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-around;
+
+      @include respond(phone) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+
+    &--tool {
+      background-size: cover;
+      height: 12rem;
+      width: 10.5rem;
+
+      @include respond(tab-port) {
+        height: 10rem;
+        width: 8.5rem;
+      }
+
+      @include respond(phone) {
+        margin: 1.5rem;	
+      }
+
+      &-name {
+        margin-top: -3rem;
+        text-align: center;
+
+        @include respond(phone) {
+          margin-top: -2.2rem;
+        }
+      }
+
+
+    }
+
+
+    &--more {
+      display: flex;
+      color: $color-white;
+      font-weight: 400;
+      transition: all .2s;
+
+      @include respond(phone){
+        justify-content: center;	
+      }
+
+      &-empty {
+        width: 100%;
+
+        @include respond(phone)	{
+          width: 0%	
+        }
+      }
+
+      &-text {
+        background-color: rgba($color-green-dark, .8);
+        border-radius: 4px 4px 0 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: no-wrap;
+        padding: 0 2rem;
+        justify-content: center;
+
+        @include respond(phone){
+          // width: 50%;		
+        }
+
+        &:hover {
+          background-color: $color-red-light;
+          cursor:pointer;
+        }
+
+        svg {
+          height: 3rem;
+          display: inline-block;
+          transition: all .5s;
+        }
+
+        p {
+          text-transform: uppercase;
+        }
+
+        &:hover > svg {
+          transform: rotate(90deg);
+        }
+      }
+
+    }
+  }
+
+  &__icon {
+    fill: $color-white;
+    width: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+.show-text {
+  opacity: 1 !important;
+  max-height: 10000px !important;
+}
