@@ -27,16 +27,15 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
     return bool ? navClass : checkboxNav ? 'nav active-nav' : 'nav';
   };
   const navClassName = (): ComputedNavName => {
-    return maybe(document.getElementById('nav'))
-      .map(
-        compose(
-          computedClassName,
-          equals('absolute'),
-          prop('position'),
-          getComputedStyle
-        )
+    const nav = maybe(document.getElementById('nav')).map(
+      compose(
+        computedClassName,
+        equals('absolute'),
+        prop('position'),
+        getComputedStyle
       )
-      .join();
+    );
+    return nav.isNothing ? 'nav' : nav.join();
   };
 
   return (
