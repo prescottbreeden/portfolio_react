@@ -74,14 +74,18 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
               <Icon className="nav__icon nav__icon--portfolio" name="embed" />
             </div>
           </Link>
-          <div className="nav__item tech-nav" onClick={handleNav}>
-            <span className="nav__link">Technology</span>
-            <Icon className="nav__icon nav__icon--about" name="database" />
-          </div>
-          <div className="nav__item contact-nav" onClick={handleNav}>
-            <span className="nav__link">Contact</span>
-            <Icon className="nav__icon nav__icon--contact" name="envelop" />
-          </div>
+          <Link to="/tech">
+            <div className="nav__item tech-nav" onClick={handleNav}>
+              <span className="nav__link">Technology</span>
+              <Icon className="nav__icon nav__icon--about" name="database" />
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div className="nav__item contact-nav" onClick={handleNav}>
+              <span className="nav__link">Contact</span>
+              <Icon className="nav__icon nav__icon--contact" name="envelop" />
+            </div>
+          </Link>
         </div>
       </nav>
     </>

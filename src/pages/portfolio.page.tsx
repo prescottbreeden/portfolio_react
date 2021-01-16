@@ -3,13 +3,14 @@ import slotify from './../assets/img/slotify.png';
 import powder from './../assets/img/powder_desktop.png';
 import casino31 from './../assets/img/casino31.png';
 import ultimateFan from './../assets/img/ultimate_fan.png';
+import { Icon } from '../components/Icon.component';
 
 interface PortfolioProps {}
 export const Portfolio: React.FC<PortfolioProps> = () => {
   return (
     <>
       <section className="portfolio">
-        <h2 className="portfolio__header">Some of My Work</h2>
+        <h2 className="portfolio__header">What I've Built</h2>
 
         <div className="project">
           <div className="project__header">
@@ -30,22 +31,16 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             </div>
             <div className="project__container--text-box">
               <p className="project__description--text">
-                <span className="u-color-red">Slotify</span>
-                is a video game music player that includes playlist creation,
-                song/album saving, shuffle, repeat, option drop-down menus,
-                searchable content, and other standard spotify functionalities.
+                <span className="u-color-red">Slotify</span> is a video game
+                music player that includes playlist creation, song/album saving,
+                shuffle, repeat, option drop-down menus, searchable content, and
+                other standard spotify functionalities.
               </p>
               <p className="project__description--link">
                 <a
-                  title="Open link to Website"
-                  href="http://54.193.101.95/"
-                  target="_blank"
-                >
-                  Visit Website &rarr;
-                </a>
-                <a
                   title="Open link to GitHub"
                   href="https://github.com/prescottbreeden/slotify"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   View Source Code &rarr;
@@ -61,9 +56,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             <div className="more__button--spacer"></div>
             <div className="more__button--box">
               <p className="more__button--box-text">Built With</p>
-              <svg className="more__button--box-icon">
-                <use href="/static/img/icomoon/sprite.svg#icon-circle-right"></use>
-              </svg>
+              <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
           <div id="slotify_tech" className="project__tech">
@@ -97,16 +90,17 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 smooth user experience on various device sizes.
               </p>
               <p className="project__description--link">
-                <a
-                  title="Open link to Website"
-                  href="http://13.58.172.1/"
-                  target="_blank"
-                >
-                  Visit Website &rarr;
-                </a>
+                {/* <a */}
+                {/*   title="Open link to Website" */}
+                {/*   href="http://13.58.172.1/" */}
+                {/*   target="_blank" */}
+                {/* > */}
+                {/*   Visit Website &rarr; */}
+                {/* </a> */}
                 <a
                   title="Open link to GitHub"
                   href="https://github.com/prescottbreeden/powder_angular"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   View Source Code &rarr;
@@ -118,9 +112,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             <div className="more__button--spacer"></div>
             <div className="more__button--box">
               <p className="more__button--box-text">Built With</p>
-              <svg className="more__button--box-icon">
-                <use href="/static/img/icomoon/sprite.svg#icon-circle-right"></use>
-              </svg>
+              <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
           <div id="powder_tech" className="project__tech">
@@ -144,22 +136,16 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             </div>
             <div className="project__container--text-box">
               <p className="project__description--text">
-                <span className="u-color-red">Casino 31</span>
-                is a card game for 1-6 players. Users can play with their
-                friends, the AI computer, or even just watch the computer play.
-                Cards are served from an API on a seperate express server.
+                <span className="u-color-red">Casino 31</span> is a card game
+                for 1-6 players. Users can play with their friends, the AI
+                computer, or even just watch the computer play. Cards are served
+                from an API on a seperate express server.
               </p>
               <p className="project__description--link">
                 <a
-                  title="Open link to Website"
-                  href="http://18.188.70.127/"
-                  target="_blank"
-                >
-                  Visit Website &rarr;
-                </a>
-                <a
                   title="Open link to GitHub"
                   href="https://github.com/prescottbreeden/_31_by_3"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   View Source Code &rarr;
@@ -175,9 +161,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             <div className="more__button--spacer"></div>
             <div className="more__button--box">
               <p className="more__button--box-text">Built With</p>
-              <svg className="more__button--box-icon">
-                <use href="/static/img/icomoon/sprite.svg#icon-circle-right"></use>
-              </svg>
+              <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
           <div id="casino_31_tech" className="project__tech">
@@ -194,36 +178,24 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
           </div>
           <div className="project__container">
             <div className="project__container--desktop">
-              <a
-                title="View Website"
-                href="http://18.220.231.186/"
-                target="blank"
-              >
-                <img
-                  src={ultimateFan}
-                  alt="project web page"
-                  className="project__desktop--img"
-                />
-              </a>
+              <img
+                src={ultimateFan}
+                alt="project web page"
+                className="project__desktop--img"
+              />
             </div>
             <div className="project__container--text-box">
               <p className="project__description--text">
                 <span className="u-color-red">Ultimate Fan</span> is a website
                 that tests users about their knowledge of athletes from selected
                 categories. All trivia questions were generated via web scraping
-                robot and data visualization is powered by Chart.js.
+                and data visualization is powered by Chart.js.
               </p>
               <p className="project__description--link">
                 <a
-                  title="Open link to Website"
-                  href="http://18.220.231.186/"
-                  target="_blank"
-                >
-                  Visit Website &rarr;
-                </a>
-                <a
                   title="Open link to GitHub"
                   href="https://github.com/prescottbreeden/ultimate_fan_project"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   View Source Code &rarr;
@@ -239,9 +211,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
             <div className="more__button--spacer"></div>
             <div className="more__button--box">
               <p className="more__button--box-text">Built With</p>
-              <svg className="more__button--box-icon">
-                <use xlinkHref="/static/img/icomoon/sprite.svg#icon-circle-right"></use>
-              </svg>
+              <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
           <div id="ultimate_fan_tech" className="project__tech">
