@@ -51,8 +51,8 @@
     font-size: 2.2rem;
     text-align: right;
 
-    @include respond(phone)	{
-      width: 25%;	
+    @include respond(phone) {
+      width: 25%;
     }
 
   }
@@ -62,7 +62,7 @@
     text-align: left;
     font-size: 2rem;
 
-    @include respond(phone)	{
+    @include respond(phone) {
       width: 70%;	
     }
   }
@@ -72,7 +72,7 @@
     text-align: left;
     font-size: 2rem;
 
-    @include respond(phone)	{
+    @include respond(phone) {
       width: 70%;	
     }
   }
@@ -81,7 +81,7 @@
     width: 80%;
     text-align: left;
 
-    @include respond(phone)	{
+    @include respond(phone) {
       width: 70%;	
     }
   }

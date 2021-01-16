@@ -2,8 +2,8 @@
   padding: 3rem 5rem;
   background-color: $color-grey-light;
 
-  @include respond(phone)	{
-    padding: 3rem 0rem;		
+  @include respond(phone) {
+    padding: 3rem 0rem;
   }
 
   &__header {
@@ -15,7 +15,7 @@
     margin-bottom: 6rem;
 
     @include respond(phone){
-      margin-bottom: 3rem;		
+      margin-bottom: 3rem;
     }
   }
 
@@ -24,8 +24,8 @@
     display: flex;
     justify-content: center;
 
-    @include respond(phone){
-      flex-direction: column;		
+    @include respond(phone) {
+      flex-direction: column;
     }
 
     &--heading {
@@ -41,15 +41,15 @@
         text-transform: uppercase;
         font-weight: 300;
 
-        @include respond(phone){
+        @include respond(phone) {
           width: 100%;	
           border-radius: 0;
           line-height: 4rem;
         }
       }
 
-      @include respond(phone){
-        width: 100%;	
+      @include respond(phone) {
+        width: 100%;
       }
     }
 
@@ -67,8 +67,8 @@
       &-box {
         width: 60%;
 
-        @include respond(phone)	{
-          width: 100%;	
+        @include respond(phone) {
+          width: 100%;
         }
       }
     }
@@ -121,13 +121,13 @@
       transition: all .2s;
 
       @include respond(phone){
-        justify-content: center;	
+        justify-content: center;
       }
 
       &-empty {
         width: 100%;
 
-        @include respond(phone)	{
+        @include respond(phone) {
           width: 0%	
         }
       }

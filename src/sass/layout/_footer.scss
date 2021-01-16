@@ -1,100 +1,100 @@
 .footer {
-    background-color: $color-black-light;
-    padding: 10rem 3rem 15rem 3rem;
-    position: relative;
+  background-color: $color-black-light;
+  padding: 10rem 3rem 15rem 3rem;
+  position: relative;
 
-	@include respond(phone){
-		height: 100vh;	
-	}
+  @include respond(phone){
+    height: 100vh;	
+  }
 
-    &__logo {
-        // margin: 2rem;
+  &__logo {
+    // margin: 2rem;
+    text-align: center;
+
+    &-img {
+      height: 20rem;
+      width: auto;
+    }
+
+    &--brand {
+
+      &-text {
         text-align: center;
-
-        &-img {
-            height: 20rem;
-            width: auto;
-        }
-    
-        &--brand {
-
-			&-text {
-				text-align: center;
-				color: $color-red;
-				letter-spacing: 1px;
-			}
-        }
-
-        &--name {
-			font-family: Raleway;
-			font-size: 3rem;
-            color: $color-white;
-        }
+        color: $color-red;
+        letter-spacing: 1px;
+      }
     }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-		margin-top: 8rem;
+    &--name {
+      font-family: Raleway;
+      font-size: 3rem;
+      color: $color-white;
     }
-	
-    &__nav {
-        // border: 1px dashed red;
-        width: 30%;
-        display: inline-block;
-        margin-left: 10rem;
+  }
 
-		@include respond(phone){
-			visibility: hidden;	
-			width: 0%;
-		}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+  }
 
-        &--list {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            outline: none;
-        }
+  &__nav {
+    // border: 1px dashed red;
+    width: 30%;
+    display: inline-block;
+    margin-left: 10rem;
 
-        &--item {
-            border-top: .3rem solid $color-white;
-            padding-top: 1rem;
-            text-align: center;
-            color: $color-white;
-            width: 100%;
-            flex: 1 100%;
-            outline: none;
-            cursor: pointer;
-            transition: all .2s;
-
-            &:hover {
-                border-top: .3rem solid $color-red-light;
-                color: $color-green-dark;
-            }
-
-			&:active {
-                border-top: .3rem solid $color-green-dark;
-			}
-        }
-
+    @include respond(phone){
+      visibility: hidden;	
+      width: 0%;
     }
 
-    &__text {
-        width: 30%;
-        border-top: .3rem solid $color-white;
-        padding-top: 1rem;
-        margin-right: 10rem;
-        text-align: center;
-        color: $color-white;
-
-		@include respond(phone){
-			width: 100%;	
-		}
-
-		&:hover {
-			border-top: .3rem solid $color-red-light;
-			cursor: pointer;
-		}
+    &--list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      outline: none;
     }
+
+    &--item {
+      border-top: .3rem solid $color-white;
+      padding-top: 1rem;
+      text-align: center;
+      color: $color-white;
+      width: 100%;
+      flex: 1 100%;
+      outline: none;
+      cursor: pointer;
+      transition: all .2s;
+
+      &:hover {
+        border-top: .3rem solid $color-red-light;
+        color: $color-green-dark;
+      }
+
+      &:active {
+        border-top: .3rem solid $color-green-dark;
+      }
+    }
+
+  }
+
+  &__text {
+    width: 30%;
+    border-top: .3rem solid $color-white;
+    padding-top: 1rem;
+    margin-right: 10rem;
+    text-align: center;
+    color: $color-white;
+
+    @include respond(phone){
+      width: 100%;	
+    }
+
+    &:hover {
+      border-top: .3rem solid $color-red-light;
+      cursor: pointer;
+    }
+  }
 
 }

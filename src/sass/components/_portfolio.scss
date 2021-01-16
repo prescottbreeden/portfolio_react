@@ -3,8 +3,8 @@
   padding-top: 6rem;
   background-color: $color-grey-light;
 
-  @include respond(phone){
-    padding: 3rem 0rem;	
+  @include respond(phone) {
+    padding: 3rem 0rem;
     padding-top: 6rem;
   }
 
@@ -33,16 +33,16 @@
     display: flex;
     justify-content: space-around;
 
-    @include respond(phone){
-      padding: 0;	
+    @include respond(phone) {
+      padding: 0;
     }
 
     &--heading-box {
       width: 40%;
       text-align: center;
 
-      @include respond(phone){
-        width: 100%;	
+      @include respond(phone) {
+        width: 100%;
       }
     }
 
@@ -55,14 +55,14 @@
       text-transform: uppercase;
       font-weight: 300;
 
-      @include respond(phone){
+      @include respond(phone) {
         width: 100%;	
         border-radius: 0;
         line-height: 4rem;
       }
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       width: 100%;	
     }
 
@@ -76,14 +76,14 @@
     // background-color: pink;
 
     @include respond(phone){
-      flex-direction: column;			
+      flex-direction: column;
     }
 
     &--empty {
       width: 60%;
 
-      @include respond(phone)	{
-        width: 0%;	
+      @include respond(phone) {
+        width: 0%;
       }
     }
 
@@ -94,8 +94,8 @@
       // border: 1px dashed orangered;
       // z-index: 200;
 
-      @include respond(phone){
-        width: 100%;	
+      @include respond(phone) {
+        width: 100%;
       }
 
       img {
@@ -117,10 +117,6 @@
     &--text-box {
       width: 55%;
       padding: 2rem;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
-      // border: 1px dashed green;
 
       @include respond(phone){
         width: 100%;	
@@ -131,10 +127,6 @@
 
   &__description {
 
-    &--text {
-      // margin-top: 4rem;
-    }
-
     &--link {
       margin-top: 5rem;
       text-align: center;
@@ -142,7 +134,7 @@
       justify-content: space-around;
 
       @include respond(phone){
-        flex-direction: column;		
+        flex-direction: column;
         align-items: center;
       }
 
@@ -157,7 +149,7 @@
         display: inline-block;
 
         @include respond(phone){
-          margin: 1rem 0;	
+          margin: 1rem 0;
         }
 
         &:hover {
@@ -174,7 +166,7 @@
     &--contrib {
 
       @include respond(phone){
-        text-align: center;	
+        text-align: center;
         margin-top: 1rem;
       }
 
@@ -182,7 +174,7 @@
         display: flex;
         align-items: center;
 
-        @include respond(phone)	{
+        @include respond(phone) {
           flex-direction: column;
 
         }
@@ -193,8 +185,8 @@
         margin: 1rem;
         color: $color-primary-dark;
 
-        @include respond(phone)	{
-          display: inline-block;	
+        @include respond(phone) {
+          display: inline-block;
         }
 
         &:hover {
@@ -202,8 +194,6 @@
         }
       }
     }
-
-
   }
 
   &__tech {

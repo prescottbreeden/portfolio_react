@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 
     @include respond(phone){
-      height: calc(100vh - 16rem);			
+      height: calc(100vh - 16rem);
       flex-direction: column;
       justify-content: space-around;
     }
@@ -30,13 +30,13 @@
       text-align: center;
       display: inline-block;
       display: flex;
-      justify-content: space-around;	
+      justify-content: space-around;
       align-items: center;
       min-width: 50rem;
       margin: 10rem auto;
 
       @include respond(phone)	{
-        min-width: auto; 
+        min-width: auto;
         margin: 0 auto;
       }
     }
@@ -44,7 +44,7 @@
     &--link:link,
     &--link:visited {
       display: flex;
-      flex-direction: column;	
+      flex-direction: column;
       text-decoration: none;
       color: $color-white;
       letter-spacing: 1px;

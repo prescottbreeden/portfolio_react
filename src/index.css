@@ -1483,7 +1483,7 @@ body {
     width: 2rem;
     fill: #f7f7f7;
     outline: none;
-    margin-right: .5rem; }
+    margin-left: 1rem; }
     @media only screen and (max-width: 37.5em) {
       .nav__icon {
         margin-right: 1rem; } }

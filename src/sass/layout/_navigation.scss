@@ -1,113 +1,107 @@
-#fold {
-//	padding-top: 4rem;
-}
-
 .error-page .nav {
-	position: fixed;
-	top: 0;
-	left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav {
-    position: absolute;
-    bottom: 0;
-	left: 0;
-    height: 5rem;
-    z-index: 300;
-    background-color: $color-black-light;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  z-index: 300;
+  background-color: $color-black-light;
+  width: 100%;
+  color: $color-white;
+  transition: all .5s;
+
+  @include respond(phone) {
+    position: fixed;
+    bottom: 7rem;
+    left: 0;
+    transform: translateY(100%);
+    height: auto;
+    background-color: rgba($color-black-light, .9);
+  }
+
+  &__list {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    outline: none;
+    flex-basis: 0 0 20%;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    letter-spacing: 1.5px;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+
+    & > * {
+      height: 100%;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
     color: $color-white;
-	transition: all .5s;
-    
-	@include respond(phone)	{
-		position: fixed;
-		bottom: 7rem;
-		left: 0;
-		transform: translateY(100%);
-		height: auto;
-		background-color: rgba($color-black-light, .9);
-	}
 
-    &__list {
-        margin: 0 auto;
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-	
-		@include respond(phone)	{
-			flex-direction: column;		
-		}
+    @include respond(phone) { }
+  }
+
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transition: transform .2s, background-color .1s;
+
+    @include respond(phone) {
+
     }
+  }
 
-    &__item {
-        cursor: pointer;
-        outline: none;
-        flex-basis: 0 0 20%;
-        align-items: center;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        padding: 1rem;
-        display: flex;
-        letter-spacing: 1.5px;
-		
-		@include respond(phone)	{
-			justify-content: center;
-		}
+  &__item:hover::before {
+    transform: scaleY(1);
+  }
 
-        & > * {
-            height: 100%;  
-        }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+    outline: none;
+    // margin-right: .5rem;
+    margin-left: 1rem;
+
+    @include respond(phone) {
+      margin-right: 1rem;
     }
-
-    &__link {
-        text-decoration: none;
-        color: $color-white;
-		
-		@include respond(phone)	{
-			
-		}
-    }
-
-
-    &__item::before {
-        content: "";
-        position: absolute;
-        bottom: 0px; 
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background-color: $color-primary;
-        transform: scaleX(0);
-        transition: transform .2s, background-color .1s;
-		
-		@include respond(phone)	{
-			
-		}
-    }
-
-    &__item:hover::before {
-        transform: scaleY(1);
-    }
-
-    &__icon {
-        height: 2rem;
-        width: 2rem;
-        fill: $color-white;
-        outline: none;
-        margin-right: .5rem;
-
-		@include respond(phone)	{
-			margin-right: 1rem;	
-		}
-    }
+  }
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 

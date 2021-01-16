@@ -2,7 +2,7 @@
   padding: 6rem 5rem;
   background-color: $color-grey-light;
 
-  @include respond(phone){
+  @include respond(phone) {
     padding-top: 3rem;
   }
 
