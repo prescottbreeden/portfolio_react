@@ -21,7 +21,8 @@
     "eject": "react-scripts eject",
     "watch:sass": "node-sass src/sass/main.scss src/index.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/index.css",
-    "prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md}\""
+    "prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md}\"",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
