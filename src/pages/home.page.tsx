@@ -19,8 +19,7 @@ export const Home: React.FC<HomeProps> = () => {
             craft like any great art form. And most importantly: there is the
             human factor, from the friendships of your teammates to the
             importance of improving the human experience in pragmatic, direct
-            ways.
-            In a nutshell, I am a programmer. I am a full-stack software
+            ways. In a nutshell, I am a programmer. I am a full-stack software
             engineer that specializes in JavaScript, Node, and React. I am
             proficient in Microsoft stacks using C# and F#. I have experience
             designing SQL, noSQL, and GraphQL data architecture. I am an
@@ -38,13 +37,13 @@ export const Home: React.FC<HomeProps> = () => {
             <div className="services--front-end">
               <div className="cube__container">
                 <h3>Front End</h3>
-                <img 
+                <img
                   title="Skills"
                   className="cube__img"
                   src={primaryCube}
                   alt="blue cube"
                 />
-              </div>	
+              </div>
               <div className="cube__text">
                 <ul className="services--list">
                   <li>Responsive Layouts</li>
@@ -56,7 +55,7 @@ export const Home: React.FC<HomeProps> = () => {
             <div className="services--backend">
               <div className="cube__container">
                 <h3>Back End</h3>
-                <img 
+                <img
                   title="Skills"
                   className="cube__img"
                   src={redCube}
@@ -74,7 +73,7 @@ export const Home: React.FC<HomeProps> = () => {
             <div className="services--db">
               <div className="cube__container">
                 <h3>Databases</h3>
-                <img 
+                <img
                   title="Skills"
                   className="cube__img"
                   src={tealCube}
@@ -95,4 +94,3 @@ export const Home: React.FC<HomeProps> = () => {
     </>
   );
 };
-

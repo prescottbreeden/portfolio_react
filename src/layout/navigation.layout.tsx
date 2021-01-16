@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Icon} from '../components/Icon.component';
-import {compose, equals, maybe, prop, scrollToAnchor} from '../utils';
+import { Icon } from '../components/Icon.component';
+import { compose, equals, maybe, prop, scrollToAnchor } from '../utils';
 
 interface NavigationProps {
   navClass: string;
@@ -20,18 +20,22 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
   };
   const getComputedStyle = (element: any) => {
     return window.getComputedStyle(element);
-  }
+  };
   // -- display logic --
   const computedClassName = (bool: boolean) => {
     return bool ? navClass : checkboxNav ? 'nav active-nav' : 'nav';
   };
   const navClassName = () => {
-    return maybe(document.getElementById('nav')).map(compose(
-      computedClassName,
-      equals('absolute'),
-      prop('position'),
-      getComputedStyle
-    )).join();
+    return maybe(document.getElementById('nav'))
+      .map(
+        compose(
+          computedClassName,
+          equals('absolute'),
+          prop('position'),
+          getComputedStyle
+        )
+      )
+      .join();
   };
 
   return (
@@ -41,7 +45,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           <input
             type="checkbox"
             className="cb-nav__checkbox"
-            id="navi-toggle" 
+            id="navi-toggle"
             checked={checkboxNav}
           />
           <label
@@ -53,60 +57,33 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           </label>
         </div>
       </div>
-      <nav
-        className={navClassName()}
-        id="nav"
-      >
+      <nav className={navClassName()} id="nav">
         <div className="nav__list">
           <Link to="/">
-            <div 
+            <div
               className="nav__item nav__item--home about-nav"
               onClick={handleNav}
             >
               <span className="nav__link">About</span>
-              <Icon 
-                className="nav__icon"
-                name="profile"
-              />
+              <Icon className="nav__icon" name="profile" />
             </div>
           </Link>
           <Link to="/portfolio">
-            <div
-              className="nav__item portfolio-nav"
-              onClick={handleNav}
-            >
-              <span className="nav__link">
-                  Portfolio
-              </span>
-              <Icon 
-                className="nav__icon nav__icon--portfolio"
-                name="embed"
-              />
+            <div className="nav__item portfolio-nav" onClick={handleNav}>
+              <span className="nav__link">Portfolio</span>
+              <Icon className="nav__icon nav__icon--portfolio" name="embed" />
             </div>
           </Link>
-          <div 
-            className="nav__item tech-nav"
-            onClick={handleNav}
-          >
+          <div className="nav__item tech-nav" onClick={handleNav}>
             <span className="nav__link">Technology</span>
-            <Icon 
-              className="nav__icon nav__icon--about"
-              name="database"
-            />
+            <Icon className="nav__icon nav__icon--about" name="database" />
           </div>
-          <div 
-            className="nav__item contact-nav"
-            onClick={handleNav}
-          >
+          <div className="nav__item contact-nav" onClick={handleNav}>
             <span className="nav__link">Contact</span>
-            <Icon 
-              className="nav__icon nav__icon--contact"
-              name="envelop"
-            />
+            <Icon className="nav__icon nav__icon--contact" name="envelop" />
           </div>
         </div>
       </nav>
     </>
   );
 };
-
