@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Waypoint } from 'react-waypoint';
+import { ComputedNavName } from '../types';
 import {
   compose,
   either,
@@ -14,7 +15,7 @@ import { Navigation } from './navigation.layout';
 interface HeaderProps {}
 export const Header: React.FC<HeaderProps> = () => {
   // -- local state --
-  const [navClass, setNavClass] = useState('nav');
+  const [navClass, setNavClass] = useState<ComputedNavName>('nav');
 
   // -- lifecycle --
   useEffect(() => {

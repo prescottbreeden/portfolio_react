@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '../components/Icon.component';
+import { ComputedNavName } from '../types';
 import { compose, equals, maybe, prop, scrollToAnchor } from '../utils';
 
 interface NavigationProps {
-  navClass: string;
+  navClass: ComputedNavName;
 }
 export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
   // -- local state --
   const [checkboxNav, setCheckboxNav] = useState(false);
 
   // -- component logic --
-  const handleToggle = () => {
+  const handleToggle = (): void => {
     setCheckboxNav(!checkboxNav);
   };
-  const handleNav = () => {
+  const handleNav = (): void => {
     scrollToAnchor('fold');
     setCheckboxNav(false);
   };
-  const getComputedStyle = (element: any) => {
+  const getComputedStyle = (element: any): CSSStyleDeclaration => {
     return window.getComputedStyle(element);
   };
   // -- display logic --
-  const computedClassName = (bool: boolean) => {
+  const computedClassName = (bool: boolean): ComputedNavName => {
     return bool ? navClass : checkboxNav ? 'nav active-nav' : 'nav';
   };
-  const navClassName = () => {
+  const navClassName = (): ComputedNavName => {
     return maybe(document.getElementById('nav'))
       .map(
         compose(
