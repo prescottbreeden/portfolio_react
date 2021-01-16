@@ -1,14 +1,5 @@
 import React from 'react';
-
-const PINK_BRIGHT = '#f03076';
-/* const PINK_DARK = '#c8326f'; */
-const BLUE_BRIGHT = '#34b5e0';
-
-/* const colors = [ */
-/*  '#55cef2', */
-/*  '#b62e65', */
-/*  '#2ea1c7', */
-/* ] */
+import { BLUE_BRIGHT, PINK_BRIGHT } from '../constants';
 
 const style1 = {
   backgroundColor: PINK_BRIGHT,

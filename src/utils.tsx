@@ -1,12 +1,12 @@
 /**
-*  Converts a string with pixel measurement into a parsed number. By default
-*  this function will grab the fontSize of the document body.
-*  @param size string optional pixel size e.g. "42px"
-*  @returns the current computed fontsize for manual REM calculations
-*/
+ *  Converts a string with pixel measurement into a parsed number. By default
+ *  this function will grab the fontSize of the document body.
+ *  @param size string optional pixel size e.g. "42px"
+ *  @returns the current computed fontsize for manual REM calculations
+ */
 export const pixelSize = (size = getComputedStyle(document.body).fontSize) => {
-    return size ? parseFloat(size.split('px')[0]) : 1;
-  };
+  return size ? parseFloat(size.split('px')[0]) : 1;
+};
 
 export const headerHeight = pixelSize() * 3;
 /**
@@ -26,7 +26,7 @@ export const scrollToElement = (
   });
 };
 
- /* Scrolls the window to the specified Anchors
+/* Scrolls the window to the specified Anchors
  * @param anchor the anchor to scroll to
  * @param behavior how you want it to scroll
  */
@@ -104,7 +104,7 @@ export const map = curry((fn: any, xs: any[]) => xs.map(fn));
 /**
  *  compose :: ((a -> b), (b -> c),  ..., (y -> z)) -> a -> z
  */
-export const compose = (...fns: any) => (...args: any) => 
+export const compose = (...fns: any) => (...args: any) =>
   fns.reduceRight((res: any, fn: any) => [fn.call(null, ...res)], args)[0];
 
 /**
@@ -121,6 +121,22 @@ export function curry(fn: Function) {
     return fn.call(null, ...args);
   };
 }
+
+/*
+ *  safeGet :: obj -> string -> a | undefined
+ */
+export function safeGet<T>(entity: T) {
+  return function (property: keyof T) {
+    return prop(property as string, entity);
+  };
+}
+
+/**
+ *  randomString :: () -> string
+ */
+export const randomString = () => {
+  return Math.random().toString(36).substring(7);
+};
 
 export class Maybe {
   $value: any;

@@ -59,28 +59,41 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
       </div>
       <nav className={navClassName()} id="nav">
         <div className="nav__list">
-          <Link to="/">
-            <div
-              className="nav__item nav__item--home about-nav"
-              onClick={handleNav}
-            >
+          <Link
+            to="/"
+            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+            onClick={handleNav}
+          >
+            <div className="nav__item nav__item--home about-nav">
               <span className="nav__link">About</span>
               <Icon className="nav__icon" name="profile" />
             </div>
           </Link>
-          <Link to="/portfolio">
+          <Link
+            to="/portfolio"
+            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+            onClick={handleNav}
+          >
             <div className="nav__item portfolio-nav" onClick={handleNav}>
               <span className="nav__link">Portfolio</span>
               <Icon className="nav__icon nav__icon--portfolio" name="embed" />
             </div>
           </Link>
-          <Link to="/tech">
+          <Link
+            to="/tech"
+            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+            onClick={handleNav}
+          >
             <div className="nav__item tech-nav" onClick={handleNav}>
               <span className="nav__link">Technology</span>
               <Icon className="nav__icon nav__icon--about" name="database" />
             </div>
           </Link>
-          <Link to="/contact">
+          <Link
+            to="/contact"
+            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+            onClick={handleNav}
+          >
             <div className="nav__item contact-nav" onClick={handleNav}>
               <span className="nav__link">Contact</span>
               <Icon className="nav__icon nav__icon--contact" name="envelop" />
