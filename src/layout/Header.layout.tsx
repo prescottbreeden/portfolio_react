@@ -1,37 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { ComputedNavName } from '../types';
-import {
-  compose,
-  either,
-  gt,
-  headerHeight,
-  maybe,
-  prop,
-  subtract,
-} from '../utils';
-import { Navigation } from './navigation.layout';
+import { headerHeight } from '../utils';
+import { Navigation } from './Navigation.layout';
 
 interface HeaderProps {}
 export const Header: React.FC<HeaderProps> = () => {
   // -- local state --
   const [navClass, setNavClass] = useState<ComputedNavName>('nav');
-
-  // -- lifecycle --
-  useEffect(() => {
-    maybe(document.getElementById('nav')).map(
-      compose(
-        either(
-          () => setNavClass('nav sticky'),
-          () => setNavClass('nav')
-        ),
-        gt(0),
-        subtract(window.pageYOffset),
-        prop('offsetTop')
-      )
-    );
-  });
-
   // -- display logic --
   return (
     <>

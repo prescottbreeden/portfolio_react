@@ -1,9 +1,10 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import './App.css';
-import { Main } from './layout/main.layout';
+import { Main } from './layout/Main.layout';
 
 function App() {
+  // on page refresh, force browser to render at top
+  window.onbeforeunload = () => window.scrollTo({ top: 0 });
   return (
     <>
       <HashRouter>

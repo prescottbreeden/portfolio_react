@@ -82,6 +82,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
         <div className="nav__list">
           <NavLink
             activeStyle={activeLinkStyle}
+            id="about"
             onClick={handleNav}
             onKeyDown={handleKeyPress}
             to="/about"
@@ -93,6 +94,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           </NavLink>
           <NavLink
             activeStyle={activeLinkStyle}
+            id="portfolio"
             to="/portfolio"
             onClick={handleNav}
             onKeyDown={handleKeyPress}
@@ -104,6 +106,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           </NavLink>
           <NavLink
             activeStyle={activeLinkStyle}
+            id="tech"
             onClick={handleNav}
             onKeyDown={handleKeyPress}
             to="/tech"
@@ -115,6 +118,7 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           </NavLink>
           <NavLink
             activeStyle={activeLinkStyle}
+            id="contact"
             onClick={handleNav}
             onKeyDown={handleKeyPress}
             to="/contact"
