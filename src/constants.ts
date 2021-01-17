@@ -59,3 +59,85 @@ export const ICON_TABLE: IconHashTable = {
     viewBox: '0 0 32 32',
   },
 };
+
+export const FRONTEND_TECH = {
+  angular: '',
+  elm: '',
+  graphQL: '',
+  react: '',
+  redux: '',
+  sass:
+    'SASS ("Syntactically Awesome Style Sheets") is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS) and adds a number of progromatic features like functions, mixins, variables, and more to make writing CSS easier.',
+};
+
+export const BACKEND_TECH = {
+  electron: '',
+  flask: '',
+  nodejs: '',
+  dapper: '',
+  dotnet: '',
+  entityFramework: '',
+  graphQL: '',
+  mongodb: '',
+  mongoose: '',
+  mysql: '',
+};
+
+export const LANGUAGES = {
+  csharp: '',
+  fsharp: '',
+  haskell: '',
+  javascript: '',
+  python: '',
+  typescript: '',
+};
+
+export const DEV_TOOLS = {
+  git: '',
+  linux: '',
+  postman: '',
+  vim:
+    'Vim (Vi Improved) is a highly configurable text editor for efficiently creating and changing any kind of text directly from the CLI.',
+};
+
+export const SERVER_TECH = {
+  apache: '',
+  aws: '',
+  gunicorn: '',
+  nginx: '',
+  ubuntu:
+    'Ubuntu is a free and open source operating system and Linux distribution based on Debian. Ubuntu is the most popular operating system across public and OpenStack clouds.',
+};
+
+export const TECH_FAVE = {
+  angular: '',
+  csharp: '',
+  css: '',
+  dapper: '',
+  dotnet: '',
+  electron: '',
+  elm: '',
+  entityFramework: '',
+  express: '',
+  flask: '',
+  fsharp: '',
+  git: '',
+  graphQL: '',
+  haskell: '',
+  html: '',
+  javascript: '',
+  linux: '',
+  mongodb: '',
+  mongoose: '',
+  mysql: '',
+  nodejs: '',
+  python: '',
+  react: '',
+  redux: '',
+  sass:
+    'SASS ("Syntactically Awesome Style Sheets") is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS) and adds a number of progromatic features like functions, mixins, variables, and more to make writing CSS easier.',
+  typescript: '',
+  ubuntu: '',
+  vim:
+    'Vim (Vi Improved) is a highly configurable text editor for efficiently creating and changing any kind of text directly from the CLI.',
+};
