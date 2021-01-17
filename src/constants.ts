@@ -2,6 +2,7 @@ import { IconHashTable } from './types';
 
 export const PINK_BRIGHT = '#f03076';
 export const BLUE_BRIGHT = '#34b5e0';
+export const PRIMARY_COLOR = '#3f7188';
 
 export const ICON_TABLE: IconHashTable = {
   profile: {

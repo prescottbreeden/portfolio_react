@@ -122,6 +122,44 @@ export function curry(fn: Function) {
   };
 }
 
+/**
+ *   some :: fn -> xs -> boolean
+ */
+export const some = curry((pred: (x: any) => boolean, list: any[]) => {
+  return list.reduce((prev: any, curr: any) => {
+    return prev ? prev : pred(curr);
+  }, false);
+});
+
+/**
+ *   all :: fn -> xs -> boolean
+ */
+export const all = curry((pred: (x: any) => boolean, list: any[]) => {
+  return list.reduce((prev: any, curr: any) => {
+    return prev ? pred(curr) : prev;
+  }, false);
+});
+
+export const includes = curry((a: string, b: string) => {
+  return b.includes(a);
+});
+
+export const split = curry((sep: string, str: string) => str.split(sep));
+
+export const doNothing = (_: any) => null;
+
+/**
+ * takes a function requiring 2 arguments and an array of functions. each func
+ * in the array will be applied against the argument of the returned function
+ * and then passed as the arguments to the first function.
+ * @example converge(concat, [prop('firstName'), prop('lastName')]);
+ * @param fn the function to be called last
+ * @param wraps array of functions to supply as arguments to fn
+ * @returns (...args) => fn(...args)
+ */
+export const converge = (fn: Function, wraps: Function[]) => (arg: any) =>
+  fn(...wraps.map((wrap: Function) => wrap(arg)));
+
 /*
  *  safeGet :: obj -> string -> a | undefined
  */

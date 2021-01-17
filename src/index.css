@@ -35,6 +35,19 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  outline-offset: -0.1rem;
+}
+a:focus {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+a:focus:-moz-focusring {
+  outline: 1px solid #f7f7f7;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .header {
   display: block;
 }
@@ -46,11 +59,6 @@ body {
   content: '';
   display: block;
   clear: both;
-}
-
-::selection {
-  background-color: #ff9c67;
-  color: #f7f7f7;
 }
 
 body {
@@ -1496,7 +1504,7 @@ body {
   transition: all 0.2s;
 }
 .footer__nav--item:hover {
-  border-top: 0.3rem solid #ff9c67;
+  border-top: 0.3rem solid #ee6d3d;
   color: #28b485;
 }
 .footer__nav--item:active {
@@ -1516,7 +1524,7 @@ body {
   }
 }
 .footer__text:hover {
-  border-top: 0.3rem solid #ff9c67;
+  border-top: 0.3rem solid #ee6d3d;
   cursor: pointer;
 }
 
@@ -1709,9 +1717,11 @@ body {
 .nav__list {
   margin: 0 auto;
   width: 60%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (max-width: 37.5em) {
   .nav__list {
@@ -1721,34 +1731,30 @@ body {
 .nav__item {
   cursor: pointer;
   outline: none;
-  flex-basis: 0 0 20%;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  padding: 1rem;
+  padding: 0.8rem;
   display: flex;
   letter-spacing: 1.5px;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 37.5em) {
   .nav__item {
     justify-content: center;
   }
 }
-.nav__item > * {
-  height: 100%;
-}
 .nav__link {
-  text-decoration: none;
   color: #f7f7f7;
 }
 .nav__item::before {
   content: '';
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 0.5rem;
   background-color: #4a849f;
   transform: scaleX(0);
   transition: transform 0.2s, background-color 0.1s;
@@ -2333,7 +2339,7 @@ body {
   transform: scale(1.05);
 }
 .form__input:focus:invalid {
-  border-bottom: 4px solid #d50000;
+  border-bottom: 4px solid #ee6d3d;
 }
 .form__label {
   font-size: 1.2rem;

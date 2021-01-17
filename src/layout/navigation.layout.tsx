@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Icon } from '../components/Icon.component';
+import { PRIMARY_COLOR } from '../constants';
 import { ComputedNavName } from '../types';
-import { compose, equals, maybe, prop, scrollToAnchor } from '../utils';
+import {
+  compose,
+  doNothing,
+  either,
+  equals,
+  includes,
+  maybe,
+  prop,
+  scrollToAnchor,
+} from '../utils';
 
 interface NavigationProps {
   navClass: ComputedNavName;
@@ -19,23 +29,33 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
     scrollToAnchor('fold');
     setCheckboxNav(false);
   };
-  const getComputedStyle = (element: any): CSSStyleDeclaration => {
-    return window.getComputedStyle(element);
-  };
+  const handleKeyPress = compose(
+    either(handleNav, doNothing),
+    equals('Enter'),
+    prop('key')
+  );
+
   // -- display logic --
   const computedClassName = (bool: boolean): ComputedNavName => {
     return bool ? navClass : checkboxNav ? 'nav active-nav' : 'nav';
   };
-  const navClassName = (): ComputedNavName => {
+  const _getComputedStyle = (element: any): CSSStyleDeclaration => {
+    return window.getComputedStyle(element);
+  };
+  const _navClassName = (): ComputedNavName => {
     const nav = maybe(document.getElementById('nav')).map(
       compose(
         computedClassName,
         equals('absolute'),
         prop('position'),
-        getComputedStyle
+        _getComputedStyle
       )
     );
     return nav.isNothing ? 'nav' : nav.join();
+  };
+  const activeLinkStyle = {
+    backgroundColor: includes('sticky', navClass) ? PRIMARY_COLOR : '',
+    borderRadius: '3px',
   };
 
   return (
@@ -43,10 +63,11 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
       <div className="cb-nav">
         <div className="cb-nav__container">
           <input
-            type="checkbox"
+            checked={checkboxNav}
             className="cb-nav__checkbox"
             id="navi-toggle"
-            checked={checkboxNav}
+            onChange={() => null}
+            type="checkbox"
           />
           <label
             htmlFor="navi-toggle"
@@ -57,48 +78,52 @@ export const Navigation: React.FC<NavigationProps> = ({ navClass }) => {
           </label>
         </div>
       </div>
-      <nav className={navClassName()} id="nav">
+      <nav className={_navClassName()} id="nav">
         <div className="nav__list">
-          <Link
-            to="/"
-            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+          <NavLink
+            activeStyle={activeLinkStyle}
             onClick={handleNav}
+            onKeyDown={handleKeyPress}
+            to="/about"
           >
-            <div className="nav__item nav__item--home about-nav">
+            <div className="nav__item">
               <span className="nav__link">About</span>
               <Icon className="nav__icon" name="profile" />
             </div>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
+            activeStyle={activeLinkStyle}
             to="/portfolio"
-            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
             onClick={handleNav}
+            onKeyDown={handleKeyPress}
           >
-            <div className="nav__item portfolio-nav" onClick={handleNav}>
+            <div className="nav__item">
               <span className="nav__link">Portfolio</span>
               <Icon className="nav__icon nav__icon--portfolio" name="embed" />
             </div>
-          </Link>
-          <Link
-            to="/tech"
-            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+          </NavLink>
+          <NavLink
+            activeStyle={activeLinkStyle}
             onClick={handleNav}
+            onKeyDown={handleKeyPress}
+            to="/tech"
           >
-            <div className="nav__item tech-nav" onClick={handleNav}>
+            <div className="nav__item">
               <span className="nav__link">Technology</span>
               <Icon className="nav__icon nav__icon--about" name="database" />
             </div>
-          </Link>
-          <Link
-            to="/contact"
-            onKeyDown={(e) => e.key === 'Enter' && handleNav()}
+          </NavLink>
+          <NavLink
+            activeStyle={activeLinkStyle}
             onClick={handleNav}
+            onKeyDown={handleKeyPress}
+            to="/contact"
           >
-            <div className="nav__item contact-nav" onClick={handleNav}>
+            <div className="nav__item">
               <span className="nav__link">Contact</span>
               <Icon className="nav__icon nav__icon--contact" name="envelop" />
             </div>
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </>

@@ -13,7 +13,7 @@
   background-color: $color-black-light;
   width: 100%;
   color: $color-white;
-  transition: all .5s;
+  transition: all 0.5s;
 
   @include respond(phone) {
     position: fixed;
@@ -21,15 +21,17 @@
     left: 0;
     transform: translateY(100%);
     height: auto;
-    background-color: rgba($color-black-light, .9);
+    background-color: rgba($color-black-light, 0.9);
   }
 
   &__list {
     margin: 0 auto;
     width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 
     @include respond(phone) {
       flex-direction: column;
@@ -39,45 +41,48 @@
   &__item {
     cursor: pointer;
     outline: none;
-    flex-basis: 0 0 20%;
+    // flex-basis: 0 0 20%;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     letter-spacing: 1.5px;
+    font-size: 2rem;
 
     @include respond(phone) {
       justify-content: center;
     }
 
-    & > * {
-      height: 100%;
-    }
+    // & > * {
+    //   height: 100%;
+    // }
   }
 
   &__link {
-    text-decoration: none;
     color: $color-white;
 
-    @include respond(phone) { }
-  }
-
-
-  &__item::before {
-    content: "";
-    position: absolute;
-    bottom: 0px; 
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: $color-primary;
-    transform: scaleX(0);
-    transition: transform .2s, background-color .1s;
+    @include respond(tab-land) {
+      // color: $color-black;
+    }
 
     @include respond(phone) {
+    }
+  }
 
+  &__item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: $color-primary;
+    transform: scaleX(0);
+    transition: transform 0.2s, background-color 0.1s;
+
+    @include respond(phone) {
     }
   }
 
@@ -90,7 +95,6 @@
     width: 2rem;
     fill: $color-white;
     outline: none;
-    // margin-right: .5rem;
     margin-left: 1rem;
 
     @include respond(phone) {
@@ -104,4 +108,3 @@
   top: 0;
   left: 0;
 }
-

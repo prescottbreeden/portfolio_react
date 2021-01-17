@@ -17,16 +17,16 @@ export const Footer: React.FC<FooterProps> = () => {
         <div className="footer__container">
           <div className="footer__nav">
             <ul className="footer__nav--list">
-              <li className="footer__nav--item about-nav">
+              <li className="footer__nav--item">
                 <p className="nav__link">About</p>
               </li>
-              <li className="footer__nav--item portfolio-nav">
+              <li className="footer__nav--item">
                 <p className="nav__link">Portfolio</p>
               </li>
-              <li className="footer__nav--item tech-nav">
+              <li className="footer__nav--item">
                 <p className="nav__link">Tech</p>
               </li>
-              <li className="footer__nav--item contact-nav">
+              <li className="footer__nav--item">
                 <p className="nav__link">Contact</p>
               </li>
             </ul>
