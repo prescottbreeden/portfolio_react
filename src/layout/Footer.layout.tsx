@@ -6,6 +6,8 @@ import {
   doNothing,
   either,
   equals,
+  focus,
+  maybe,
   prop,
   scrollToAnchor,
 } from '../utils';
@@ -16,9 +18,7 @@ export const Footer: React.FC<FooterProps> = () => {
   // -- component logic --
   const handleNav = curry((id: string, _: any): void => {
     scrollToAnchor('fold');
-    setTimeout(() => {
-      document.getElementById(id)?.focus();
-    }, 0);
+    setTimeout(() => maybe(document.getElementById(id)).map(focus), 0);
   });
   const handleKeyPress = curry((id: string, event: KeyboardEvent) =>
     compose(

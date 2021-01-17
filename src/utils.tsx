@@ -148,6 +148,8 @@ export const split = curry((sep: string, str: string) => str.split(sep));
 
 export const doNothing = (_: any) => null;
 
+export const focus = (element: HTMLElement) => element.focus();
+
 /**
  * takes a function requiring 2 arguments and an array of functions. each func
  * in the array will be applied against the argument of the returned function
