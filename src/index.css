@@ -2145,6 +2145,31 @@ body {
   }
 }
 
+.quotes {
+  padding: 3rem 0;
+  background-color: #ddd;
+  height: 60rem;
+}
+.quotes__cube {
+  min-height: 30rem;
+  position: relative;
+}
+.quotes__heading {
+  text-align: center;
+}
+.quotes__container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.quotes__quote {
+  font-size: 2rem;
+}
+.quotes__author {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .btn {
   padding: 1rem 3rem;
   background-color: #4a849f;

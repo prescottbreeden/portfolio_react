@@ -151,6 +151,16 @@ export const includes = curry((a: string, b: string) => {
 
 export const split = curry((sep: string, str: string) => str.split(sep));
 
+export const splitAt = curry((index: number, xs: any[] | string) => {
+  const p1 = xs.slice(0, index);
+  const p2 = xs.slice(index);
+  return [p1, p2];
+});
+export const head = (xs: any[] | string) => (xs.length ? xs[0] : xs);
+
+export const tail = (xs: any[] | string) =>
+  xs.length ? xs[xs.length - 1] : xs;
+
 export const doNothing = (_: any) => null;
 
 export const focus = (element: HTMLElement) => element.focus();

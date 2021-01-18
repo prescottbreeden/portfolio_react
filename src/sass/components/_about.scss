@@ -118,3 +118,32 @@
     }
   }
 }
+.quotes {
+  padding: 3rem 0;
+  background-color: $color-grey-light;
+  height: 60rem;
+
+  &__cube {
+    min-height: 30rem;
+    position: relative;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__container {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__quote {
+    font-size: 2rem;
+  }
+
+  &__author {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
