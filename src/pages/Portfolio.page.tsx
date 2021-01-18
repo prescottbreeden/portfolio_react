@@ -65,17 +65,17 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 <div className="more__container--heading">
                   <h3>Front-End</h3>
                 </div>
-                <div className="project__tech-row slotify_tech_row show-text">
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">HTML</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-2">
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-3">
                     <h4 className="site__container--tool-name">CSS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-3">
+                  <div className="site__container--tool tool-img-14">
+                    <h4 className="site__container--tool-name">HTML</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-15">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
-                  <div className="site__container--tool tool-img-6">
+                  <div className="site__container--tool tool-img-35">
                     <h4 className="site__container--tool-name">jQuery</h4>
                   </div>
                 </div>
@@ -84,15 +84,9 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 <div className="more__container--heading">
                   <h3>Back-End</h3>
                 </div>
-                <div className="project__tech-row slotify_tech_row show-text">
-                  <div className="site__container--tool tool-img-20">
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-37">
                     <h4 className="site__container--tool-name">PHP</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-18">
-                    <h4 className="site__container--tool-name">Apache</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-19">
-                    <h4 className="site__container--tool-name">Ubuntu</h4>
                   </div>
                 </div>
               </div>
@@ -100,8 +94,8 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 <div className="more__container--heading">
                   <h3>Database</h3>
                 </div>
-                <div className="project__tech-row slotify_tech_row show-text">
-                  <div className="site__container--tool tool-img-15">
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-20">
                     <h4 className="site__container--tool-name">MySQL</h4>
                   </div>
                 </div>
@@ -110,18 +104,31 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 <div className="more__container--heading">
                   <h3>Dev Tools</h3>
                 </div>
-                <div className="project__tech-row slotify_tech_row show-text">
-                  <div className="site__container--tool tool-img-7">
-                    <h4 className="site__container--tool-name">SASS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-21">
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-33">
                     <h4 className="site__container--tool-name">GitHub</h4>
                   </div>
-                  <div className="site__container--tool tool-img-33">
+                  <div className="site__container--tool tool-img-25">
+                    <h4 className="site__container--tool-name">SASS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-28">
                     <h4 className="site__container--tool-name">Vim</h4>
                   </div>
-                  <div className="site__container--tool tool-img-24">
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Server</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-29">
+                    <h4 className="site__container--tool-name">Apache</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-30">
                     <h4 className="site__container--tool-name">AWS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-27">
+                    <h4 className="site__container--tool-name">Ubuntu</h4>
                   </div>
                 </div>
               </div>
@@ -180,8 +187,44 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
               <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
-          <div id="powder_tech" className="project__tech">
-            <div id="powder_html"></div>
+          <div id="powder_tech" className="project__tech show-text">
+            <div id="powder_html">
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Front-End</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-3">
+                    <h4 className="site__container--tool-name">CSS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-14">
+                    <h4 className="site__container--tool-name">HTML</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-15">
+                    <h4 className="site__container--tool-name">JavaScript</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Dev Tools</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-33">
+                    <h4 className="site__container--tool-name">GitHub</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-21">
+                    <h4 className="site__container--tool-name">Node.js</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-25">
+                    <h4 className="site__container--tool-name">SASS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-28">
+                    <h4 className="site__container--tool-name">Vim</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="project">
@@ -229,8 +272,95 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
               <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
-          <div id="casino_31_tech" className="project__tech">
-            <div id="casino_31_html"></div>
+          <div id="casino_31_tech" className="project__tech show-text">
+            <div id="casino_31_html">
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Front-End</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-31">
+                    <h4 className="site__container--tool-name">Bootstrap</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-3">
+                    <h4 className="site__container--tool-name">CSS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-14">
+                    <h4 className="site__container--tool-name">HTML</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-15">
+                    <h4 className="site__container--tool-name">JavaScript</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-35">
+                    <h4 className="site__container--tool-name">jQuery</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Game API</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-2">
+                    <h4 className="site__container--tool-name">C#</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-5">
+                    <h4 className="site__container--tool-name">.NET Core</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Card API</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-15">
+                    <h4 className="site__container--tool-name">JavaScript</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-8">
+                    <h4 className="site__container--tool-name">Express</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Dev Tools</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-33">
+                    <h4 className="site__container--tool-name">GitHub</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-21">
+                    <h4 className="site__container--tool-name">Node.js</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-25">
+                    <h4 className="site__container--tool-name">SASS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-39">
+                    <h4 className="site__container--tool-name">VS Code</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Servers</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-30">
+                    <h4 className="site__container--tool-name">AWS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-36">
+                    <h4 className="site__container--tool-name">Nginx</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-38">
+                    <h4 className="site__container--tool-name">Supervisor</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-27">
+                    <h4 className="site__container--tool-name">Ubuntu</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -279,8 +409,89 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
               <Icon className="more__button--box-icon" name="circleRight" />
             </div>
           </div>
-          <div id="ultimate_fan_tech" className="project__tech">
-            <div id="ultimate_fan_html"></div>
+          <div id="ultimate_fan_tech" className="project__tech show-text">
+            <div id="ultimate_fan_html">
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Front-End</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-3">
+                    <h4 className="site__container--tool-name">CSS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-14">
+                    <h4 className="site__container--tool-name">HTML</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-15">
+                    <h4 className="site__container--tool-name">JavaScript</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-35">
+                    <h4 className="site__container--tool-name">jQuery</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Back-End</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-22">
+                    <h4 className="site__container--tool-name">Python</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-32">
+                    <h4 className="site__container--tool-name">Django</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Database</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-40">
+                    <h4 className="site__container--tool-name">SQLite</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Dev Tools</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-33">
+                    <h4 className="site__container--tool-name">GitHub</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-21">
+                    <h4 className="site__container--tool-name">Node.js</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-25">
+                    <h4 className="site__container--tool-name">SASS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-28">
+                    <h4 className="site__container--tool-name">Vim</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="more__container">
+                <div className="more__container--heading">
+                  <h3>Server</h3>
+                </div>
+                <div className="project__tech-row show-text">
+                  <div className="site__container--tool tool-img-30">
+                    <h4 className="site__container--tool-name">AWS</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-36">
+                    <h4 className="site__container--tool-name">Nginx</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-34">
+                    <h4 className="site__container--tool-name">Gunicorn</h4>
+                  </div>
+                  <div className="site__container--tool tool-img-27">
+                    <h4 className="site__container--tool-name">Ubuntu</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

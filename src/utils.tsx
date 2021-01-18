@@ -123,6 +123,11 @@ export function curry(fn: Function) {
 }
 
 /**
+ *   defaultTo :: a -> b -> a | b
+ */
+export const defaultTo = curry((def: any, val: any) => (val ? val : def));
+
+/**
  *   some :: fn -> xs -> boolean
  */
 export const some = curry((pred: (x: any) => boolean, list: any[]) => {

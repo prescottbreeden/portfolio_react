@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = () => {
             </ul>
           </div>
           <div className="footer__text contact-nav">
-            <p>Copyright &copy; {date} by Prescott Breeden.</p>
+            <p>Copyright &copy; 2017-{date} by Prescott Breeden.</p>
           </div>
         </div>
       </footer>

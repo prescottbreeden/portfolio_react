@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Tech } from '../components/Tech.component';
 import { Contact } from '../pages/Contact.page';
 import { Home } from '../pages/Home.page';
 import { Portfolio } from '../pages/Portfolio.page';
+import { Tech } from '../pages/Tech.page';
 import { Footer } from '../layout/Footer.layout';
 import { Header } from '../layout/Header.layout';
 import { RedirectComponent } from '../components/Redirect.component';
