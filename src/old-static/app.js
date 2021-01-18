@@ -1,6 +1,6 @@
 // $.mobile.loader.prototype.options.text = "";
 
-$(document).ready(function() {
+$(document).ready(function () {
   console.log('power overwhelming');
   let activeNav = false;
   let slotify = false;
@@ -12,18 +12,16 @@ $(document).ready(function() {
   //						 NAVIGATION
   //=========================================================//
 
-
-
   //---------------- BEHAVIOR -------------//
 
-  if ($('.cb-nav__checkbox').is(':checked'))	{
+  if ($('.cb-nav__checkbox').is(':checked')) {
     $('.cb-nav__checkbox').prop('checked', false);
   }
 
   // sticky navigation trigger
-  if($('.nav').css("position") === "absolute") {
-    $('.nav').waypoint(function(direction) {
-      if (direction == "down") {
+  if ($('.nav').css('position') === 'absolute') {
+    $('.nav').waypoint(function (direction) {
+      if (direction == 'down') {
         console.log('triggered down');
         $('.nav').addClass('sticky');
       } else {
@@ -34,77 +32,76 @@ $(document).ready(function() {
   }
 
   // activate mobile nav
-  $(document).on('click', '.cb-nav__button', function() {
+  $(document).on('click', '.cb-nav__button', function () {
     $('nav').toggleClass('active-nav');
     activeNav = !activeNav;
-  })
+  });
 
   //---------------- ROUTES -------------//
 
-  $(document).on('click', '.about-nav', function() {
+  $(document).on('click', '.about-nav', function () {
     loadAbout();
-    $('html, body').animate({scrollTop: $('#fold').offset().top}, 1000);
+    $('html, body').animate({ scrollTop: $('#fold').offset().top }, 1000);
     $('nav').removeClass('active-nav');
     $('.cb-nav__checkbox').prop('checked', false);
-  })
+  });
 
-  $(document).on('click', '.portfolio-nav', function() {
+  $(document).on('click', '.portfolio-nav', function () {
     loadPortfolio();
-    $('html, body').animate({scrollTop: $('#fold').offset().top}, 1000);
+    $('html, body').animate({ scrollTop: $('#fold').offset().top }, 1000);
     $('nav').removeClass('active-nav');
     $('.cb-nav__checkbox').prop('checked', false);
-  })
+  });
 
-  $(document).on('click', '.tech-nav', function() {
+  $(document).on('click', '.tech-nav', function () {
     loadTech();
-    $('html, body').animate({scrollTop: $('#fold').offset().top}, 1000);
+    $('html, body').animate({ scrollTop: $('#fold').offset().top }, 1000);
     $('nav').removeClass('active-nav');
     $('.cb-nav__checkbox').prop('checked', false);
-  })
+  });
 
-  $(document).on('click', '.contact-nav', function() {
+  $(document).on('click', '.contact-nav', function () {
     loadContact();
-    $('html, body').animate({scrollTop: $('#fold').offset().top}, 1000);
+    $('html, body').animate({ scrollTop: $('#fold').offset().top }, 1000);
     $('nav').removeClass('active-nav');
     $('.cb-nav__checkbox').prop('checked', false);
-  })
+  });
 
-  $(document).on('click', '#reload_home', function() {
+  $(document).on('click', '#reload_home', function () {
     $('nav').removeClass('active-nav');
     $('.cb-nav__checkbox').prop('checked', false);
-  })
+  });
 
   //=========================================================//
   //					   TECH DESCRIPTIONS
   //=========================================================//
 
-
-  $(document).on('click', '.hexagon', function() {
+  $(document).on('click', '.hexagon', function () {
     id = this.innerText;
     console.log(id);
     $.ajax({
       url: `/tech/${id}`,
       dataType: 'json',
-      success: function(res) {
+      success: function (res) {
         blurb = res['blurb'];
         name = res['name'];
-        document.getElementById('blurb').innerHTML=`
+        document.getElementById('blurb').innerHTML = `
           <p>${blurb}</p>
           `;
-        document.getElementById('tech_image').innerHTML=`
+        document.getElementById('tech_image').innerHTML = `
           <img src="/static/img/tlogos/${name}.png">
           `;
         $('.tech__logo').addClass('tech__active');
-      }
+      },
     });
-  })
+  });
 
   //=========================================================//
   //					   PORTFOLIO MORE INFO
   //=========================================================//
 
-  $(document).on('click', '#slotify_button', function() {
-    if(slotify){
+  $(document).on('click', '#slotify_button', function () {
+    if (slotify) {
       let content = document.getElementById('slotify_html');
       content.innerHTML = '';
     } else {
@@ -113,10 +110,10 @@ $(document).ready(function() {
       $('.slotify_tech_row').addClass('show-text');
     }
     slotify = !slotify;
-  })
+  });
 
-  $(document).on('click', '#casino_31_button', function() {
-    if(casino31){
+  $(document).on('click', '#casino_31_button', function () {
+    if (casino31) {
       let content = document.getElementById('casino_31_html');
       content.innerHTML = '';
     } else {
@@ -125,10 +122,10 @@ $(document).ready(function() {
       $('.casino_31_tech_row').addClass('show-text');
     }
     casino31 = !casino31;
-  })
+  });
 
-  $(document).on('click', '#ultimate_fan_button', function() {
-    if(ultimateFan){
+  $(document).on('click', '#ultimate_fan_button', function () {
+    if (ultimateFan) {
       let content = document.getElementById('ultimate_fan_html');
       content.innerHTML = '';
     } else {
@@ -137,10 +134,10 @@ $(document).ready(function() {
       $('.ultimate_fan_tech_row').addClass('show-text');
     }
     ultimateFan = !ultimateFan;
-  })
+  });
 
-  $(document).on('click', '#powder_button', function() {
-    if(powder) {
+  $(document).on('click', '#powder_button', function () {
+    if (powder) {
       let content = document.getElementById('powder_html');
       content.innerHTML = '';
     } else {
@@ -149,41 +146,39 @@ $(document).ready(function() {
       $('.powder_tech_row').addClass('show-text');
     }
     powder = !powder;
-  })
+  });
 
   //=========================================================//
   //					   SITE MORE INFO
   //=========================================================//
 
-
-  $(document).on('click', '#front_end_more', function() {
+  $(document).on('click', '#front_end_more', function () {
     console.log('clicked');
     $('#front_end_more-box').toggleClass('show-text');
     $('#front_end_more-text').toggleClass('show-text');
-  })
+  });
 
-  $(document).on('click', '#back_end_more', function() {
+  $(document).on('click', '#back_end_more', function () {
     console.log('clicked');
     $('#back_end_more-box').toggleClass('show-text');
     $('#back_end_more-text').toggleClass('show-text');
-  })
+  });
 
-  $(document).on('click', '#database_more', function() {
+  $(document).on('click', '#database_more', function () {
     console.log('clicked');
     $('#database_more-box').toggleClass('show-text');
     $('#database_more-text').toggleClass('show-text');
-  })
+  });
 
-  $(document).on('click', '#dev_tools_more', function() {
+  $(document).on('click', '#dev_tools_more', function () {
     console.log('clicked');
     $('#dev_tools_more-box').toggleClass('show-text');
     $('#dev_tools_more-text').toggleClass('show-text');
-  })
+  });
 
   //==========================================================//
   //					      DOM CONTENT
   //==========================================================//
-
 
   //------------------- ABOUT -----------------------//
 
@@ -269,9 +264,7 @@ $(document).ready(function() {
     </div>
     </section>
     `;
-
   }
-
 
   //------------------- PORTFOLIO -----------------------//
 
@@ -507,36 +500,33 @@ $(document).ready(function() {
     </div>
     </section>
     `;
-
   }
-
 
   //------------------- TECH -----------------------//
 
   function loadTech() {
-
     let technologies = [
       'html',
-      'css', 
+      'css',
       'javascript',
-      'angular', 
-      'react', 
+      'angular',
+      'react',
       'jquery',
       'sass',
       'flask',
       'django',
-      'python', 
-      'dotnet', 
+      'python',
+      'dotnet',
       'csharp',
       'nodejs',
       'express',
       'sql',
       'sqlite',
-      'mongodb', 
+      'mongodb',
       'apache',
       'ubuntu',
       'php',
-      'github'
+      'github',
     ];
 
     technologies = technologies.reverse();
@@ -548,12 +538,12 @@ $(document).ready(function() {
     <section class="tech">
     <h2 class="tech__header">Some of My Favorite Tech</h2>
     <ul class="grid clear">
-    `
+    `;
     //===============================================//
     //					tech grid					 //
     //===============================================//
 
-    for(let i = 1; i <= total; i++) {
+    for (let i = 1; i <= total; i++) {
       let techName = technologies.pop();
       grid += `
       <li class="hex-container">
@@ -563,7 +553,7 @@ $(document).ready(function() {
       <span class="transparent">${techName}</span>
       </a>
       </li>     
-      `	
+      `;
     }
 
     //===============================================//
@@ -818,17 +808,12 @@ $(document).ready(function() {
     </div>
     </div>
     </section>
-    ` 
+    `;
 
     content.innerHTML = grid;
-
   }
 
-
-
-
   //------------------- CONTACT -----------------------//
-
 
   function loadContact() {
     const content = document.getElementById('fold');
@@ -882,7 +867,6 @@ $(document).ready(function() {
     </ul>
     </section>
     `;
-
   }
 
   //===============================================//
@@ -981,8 +965,7 @@ $(document).ready(function() {
     </div>
     </div>
     </div>
-    `
-
+    `;
   }
   //===============================================//
   //			CASINO31 PORTFOLIO MORE			     //
@@ -1110,8 +1093,7 @@ $(document).ready(function() {
     </div>
     </div>
     </div>
-    `
-
+    `;
   }
 
   //===============================================//
@@ -1225,7 +1207,7 @@ $(document).ready(function() {
     </div>
     </div>
     </div>
-    `
+    `;
   }
 
   //===============================================//
@@ -1322,7 +1304,6 @@ $(document).ready(function() {
     </div>
     </div>
     </div>
-    `
+    `;
   }
-
 });

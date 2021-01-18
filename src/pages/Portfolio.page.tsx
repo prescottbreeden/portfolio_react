@@ -66,13 +66,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-3">
+                  <div className="site__container--tool tool-img-23">
                     <h4 className="site__container--tool-name">CSS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-14">
+                  <div className="site__container--tool tool-img-26">
                     <h4 className="site__container--tool-name">HTML</h4>
                   </div>
-                  <div className="site__container--tool tool-img-15">
+                  <div className="site__container--tool tool-img-1">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
                   <div className="site__container--tool tool-img-35">
@@ -95,7 +95,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Database</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-20">
+                  <div className="site__container--tool tool-img-17">
                     <h4 className="site__container--tool-name">MySQL</h4>
                   </div>
                 </div>
@@ -108,10 +108,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-33">
                     <h4 className="site__container--tool-name">GitHub</h4>
                   </div>
-                  <div className="site__container--tool tool-img-25">
+                  <div className="site__container--tool tool-img-10">
                     <h4 className="site__container--tool-name">SASS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-28">
+                  <div className="site__container--tool tool-img-21">
                     <h4 className="site__container--tool-name">Vim</h4>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-30">
                     <h4 className="site__container--tool-name">AWS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-27">
+                  <div className="site__container--tool tool-img-41">
                     <h4 className="site__container--tool-name">Ubuntu</h4>
                   </div>
                 </div>
@@ -194,13 +194,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-3">
+                  <div className="site__container--tool tool-img-23">
                     <h4 className="site__container--tool-name">CSS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-14">
+                  <div className="site__container--tool tool-img-26">
                     <h4 className="site__container--tool-name">HTML</h4>
                   </div>
-                  <div className="site__container--tool tool-img-15">
+                  <div className="site__container--tool tool-img-1">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
                 </div>
@@ -213,13 +213,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-33">
                     <h4 className="site__container--tool-name">GitHub</h4>
                   </div>
-                  <div className="site__container--tool tool-img-21">
+                  <div className="site__container--tool tool-img-2">
                     <h4 className="site__container--tool-name">Node.js</h4>
                   </div>
-                  <div className="site__container--tool tool-img-25">
+                  <div className="site__container--tool tool-img-10">
                     <h4 className="site__container--tool-name">SASS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-28">
+                  <div className="site__container--tool tool-img-21">
                     <h4 className="site__container--tool-name">Vim</h4>
                   </div>
                 </div>
@@ -282,13 +282,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-31">
                     <h4 className="site__container--tool-name">Bootstrap</h4>
                   </div>
-                  <div className="site__container--tool tool-img-3">
+                  <div className="site__container--tool tool-img-23">
                     <h4 className="site__container--tool-name">CSS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-14">
+                  <div className="site__container--tool tool-img-26">
                     <h4 className="site__container--tool-name">HTML</h4>
                   </div>
-                  <div className="site__container--tool tool-img-15">
+                  <div className="site__container--tool tool-img-1">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
                   <div className="site__container--tool tool-img-35">
@@ -301,10 +301,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Game API</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-2">
+                  <div className="site__container--tool tool-img-13">
                     <h4 className="site__container--tool-name">C#</h4>
                   </div>
-                  <div className="site__container--tool tool-img-5">
+                  <div className="site__container--tool tool-img-11">
                     <h4 className="site__container--tool-name">.NET Core</h4>
                   </div>
                 </div>
@@ -314,10 +314,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Card API</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-15">
+                  <div className="site__container--tool tool-img-1">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
-                  <div className="site__container--tool tool-img-8">
+                  <div className="site__container--tool tool-img-5">
                     <h4 className="site__container--tool-name">Express</h4>
                   </div>
                 </div>
@@ -330,10 +330,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-33">
                     <h4 className="site__container--tool-name">GitHub</h4>
                   </div>
-                  <div className="site__container--tool tool-img-21">
+                  <div className="site__container--tool tool-img-2">
                     <h4 className="site__container--tool-name">Node.js</h4>
                   </div>
-                  <div className="site__container--tool tool-img-25">
+                  <div className="site__container--tool tool-img-10">
                     <h4 className="site__container--tool-name">SASS</h4>
                   </div>
                   <div className="site__container--tool tool-img-39">
@@ -355,7 +355,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-38">
                     <h4 className="site__container--tool-name">Supervisor</h4>
                   </div>
-                  <div className="site__container--tool tool-img-27">
+                  <div className="site__container--tool tool-img-41">
                     <h4 className="site__container--tool-name">Ubuntu</h4>
                   </div>
                 </div>
@@ -416,13 +416,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-3">
+                  <div className="site__container--tool tool-img-23">
                     <h4 className="site__container--tool-name">CSS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-14">
+                  <div className="site__container--tool tool-img-26">
                     <h4 className="site__container--tool-name">HTML</h4>
                   </div>
-                  <div className="site__container--tool tool-img-15">
+                  <div className="site__container--tool tool-img-1">
                     <h4 className="site__container--tool-name">JavaScript</h4>
                   </div>
                   <div className="site__container--tool tool-img-35">
@@ -435,7 +435,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Back-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-22">
+                  <div className="site__container--tool tool-img-18">
                     <h4 className="site__container--tool-name">Python</h4>
                   </div>
                   <div className="site__container--tool tool-img-32">
@@ -461,13 +461,13 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-33">
                     <h4 className="site__container--tool-name">GitHub</h4>
                   </div>
-                  <div className="site__container--tool tool-img-21">
+                  <div className="site__container--tool tool-img-2">
                     <h4 className="site__container--tool-name">Node.js</h4>
                   </div>
-                  <div className="site__container--tool tool-img-25">
+                  <div className="site__container--tool tool-img-10">
                     <h4 className="site__container--tool-name">SASS</h4>
                   </div>
-                  <div className="site__container--tool tool-img-28">
+                  <div className="site__container--tool tool-img-21">
                     <h4 className="site__container--tool-name">Vim</h4>
                   </div>
                 </div>
@@ -486,7 +486,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <div className="site__container--tool tool-img-34">
                     <h4 className="site__container--tool-name">Gunicorn</h4>
                   </div>
-                  <div className="site__container--tool tool-img-27">
+                  <div className="site__container--tool tool-img-41">
                     <h4 className="site__container--tool-name">Ubuntu</h4>
                   </div>
                 </div>

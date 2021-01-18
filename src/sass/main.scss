@@ -1,27 +1,28 @@
 //base
-@import 'base/_variables';
-@import 'base/_mixins';
-@import 'base/_base';
-@import 'base/_typography';
-@import 'base/_animations';
-@import 'base/_utilities';
-@import 'base/_functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+@import 'base/utilities';
+@import 'base/functions';
 
 //layout
-@import 'layout/_footer';
-@import 'layout/_header';
-@import 'layout/_mobile-nav';
-@import 'layout/_navigation';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/mobile-nav';
+@import 'layout/navigation';
 
 //components
-@import 'components/_about';
-@import 'components/_btn';
-@import 'components/_contact';
-@import 'components/_cube';
-@import 'components/_form';
-@import 'components/_hexagon-grid';
-@import 'components/_more';
-@import 'components/_portfolio';
-@import 'components/_site';
-@import 'components/_success';
-@import 'components/_tech-details';
+@import 'components/about';
+@import 'components/btn';
+@import 'components/contact';
+@import 'components/cube';
+@import 'components/form';
+@import 'components/hexagon-grid';
+@import 'components/more';
+@import 'components/portfolio';
+@import 'components/site';
+@import 'components/success';
+@import 'components/tech-details';
+@import 'components/tools';

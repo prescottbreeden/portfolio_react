@@ -1,0 +1,17 @@
+.tools {
+  padding: 6rem 5rem;
+  background-color: $color-grey-light;
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    border: 1px dashed blue;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}

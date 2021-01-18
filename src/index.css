@@ -299,7 +299,7 @@ body {
 }
 
 .tool-img-1 {
-  background-image: url('assets/img/tlogos/angular.png');
+  background-image: url('assets/img/tlogos/javascript.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -307,7 +307,7 @@ body {
 }
 
 .tool-img-2 {
-  background-image: url('assets/img/tlogos/csharp.png');
+  background-image: url('assets/img/tlogos/nodejs.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -315,7 +315,7 @@ body {
 }
 
 .tool-img-3 {
-  background-image: url('assets/img/tlogos/css.png');
+  background-image: url('assets/img/tlogos/react.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -323,7 +323,7 @@ body {
 }
 
 .tool-img-4 {
-  background-image: url('assets/img/tlogos/dapper.png');
+  background-image: url('assets/img/tlogos/redux.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -331,7 +331,7 @@ body {
 }
 
 .tool-img-5 {
-  background-image: url('assets/img/tlogos/dotnet.png');
+  background-image: url('assets/img/tlogos/express.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -347,158 +347,6 @@ body {
 }
 
 .tool-img-7 {
-  background-image: url('assets/img/tlogos/elm.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-8 {
-  background-image: url('assets/img/tlogos/express.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-9 {
-  background-image: url('assets/img/tlogos/flask.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-10 {
-  background-image: url('assets/img/tlogos/fsharp.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-11 {
-  background-image: url('assets/img/tlogos/git.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-12 {
-  background-image: url('assets/img/tlogos/graphQL.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-13 {
-  background-image: url('assets/img/tlogos/haskell.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-14 {
-  background-image: url('assets/img/tlogos/html.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-15 {
-  background-image: url('assets/img/tlogos/javascript.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-16 {
-  background-image: url('assets/img/tlogos/linux.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-17 {
-  background-image: url('assets/img/tlogos/mongodb.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-18 {
-  background-image: url('assets/img/tlogos/mongoose.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-19 {
-  background-image: url('assets/img/tlogos/mssql.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-20 {
-  background-image: url('assets/img/tlogos/mysql.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-21 {
-  background-image: url('assets/img/tlogos/nodejs.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-22 {
-  background-image: url('assets/img/tlogos/python.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-23 {
-  background-image: url('assets/img/tlogos/react.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-24 {
-  background-image: url('assets/img/tlogos/redux.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-25 {
-  background-image: url('assets/img/tlogos/sass.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  backface-visibility: hidden;
-}
-
-.tool-img-26 {
   background-image: url('assets/img/tlogos/typescript.png');
   background-size: cover;
   background-position: center;
@@ -506,8 +354,160 @@ body {
   backface-visibility: hidden;
 }
 
-.tool-img-27 {
+.tool-img-8 {
+  background-image: url('assets/img/tlogos/mongoose.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-9 {
+  background-image: url('assets/img/tlogos/graphQL.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-10 {
+  background-image: url('assets/img/tlogos/sass.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-11 {
+  background-image: url('assets/img/tlogos/dotnet.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-12 {
+  background-image: url('assets/img/tlogos/fsharp.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-13 {
+  background-image: url('assets/img/tlogos/csharp.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-14 {
+  background-image: url('assets/img/tlogos/dapper.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-15 {
+  background-image: url('assets/img/tlogos/mongodb.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-16 {
+  background-image: url('assets/img/tlogos/mssql.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-17 {
+  background-image: url('assets/img/tlogos/mysql.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-18 {
+  background-image: url('assets/img/tlogos/python.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-19 {
+  background-image: url('assets/img/tlogos/elm.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-20 {
+  background-image: url('assets/img/tlogos/linux.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-21 {
   background-image: url('assets/img/tlogos/vim.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-22 {
+  background-image: url('assets/img/tlogos/angular.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-23 {
+  background-image: url('assets/img/tlogos/css.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-24 {
+  background-image: url('assets/img/tlogos/flask.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-25 {
+  background-image: url('assets/img/tlogos/haskell.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-26 {
+  background-image: url('assets/img/tlogos/html.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-27 {
+  background-image: url('assets/img/tlogos/git.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -627,14 +627,14 @@ body {
 }
 
 .img-1 {
-  background-image: url('assets/img/tlogos/angular.png');
+  background-image: url('assets/img/tlogos/javascript.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-1:after {
-  content: 'angular';
+  content: 'javascript';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -653,14 +653,14 @@ body {
 }
 
 .img-2 {
-  background-image: url('assets/img/tlogos/csharp.png');
+  background-image: url('assets/img/tlogos/nodejs.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-2:after {
-  content: 'csharp';
+  content: 'nodejs';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -679,14 +679,14 @@ body {
 }
 
 .img-3 {
-  background-image: url('assets/img/tlogos/css.png');
+  background-image: url('assets/img/tlogos/react.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-3:after {
-  content: 'css';
+  content: 'react';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -705,14 +705,14 @@ body {
 }
 
 .img-4 {
-  background-image: url('assets/img/tlogos/dapper.png');
+  background-image: url('assets/img/tlogos/redux.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-4:after {
-  content: 'dapper';
+  content: 'redux';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -731,14 +731,14 @@ body {
 }
 
 .img-5 {
-  background-image: url('assets/img/tlogos/dotnet.png');
+  background-image: url('assets/img/tlogos/express.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-5:after {
-  content: 'dotnet';
+  content: 'express';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -783,14 +783,14 @@ body {
 }
 
 .img-7 {
-  background-image: url('assets/img/tlogos/elm.png');
+  background-image: url('assets/img/tlogos/typescript.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-7:after {
-  content: 'elm';
+  content: 'typescript';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -809,14 +809,14 @@ body {
 }
 
 .img-8 {
-  background-image: url('assets/img/tlogos/express.png');
+  background-image: url('assets/img/tlogos/mongoose.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-8:after {
-  content: 'express';
+  content: 'mongoose';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -835,14 +835,14 @@ body {
 }
 
 .img-9 {
-  background-image: url('assets/img/tlogos/flask.png');
+  background-image: url('assets/img/tlogos/graphQL.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-9:after {
-  content: 'flask';
+  content: 'graphQL';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -861,14 +861,14 @@ body {
 }
 
 .img-10 {
-  background-image: url('assets/img/tlogos/fsharp.png');
+  background-image: url('assets/img/tlogos/sass.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-10:after {
-  content: 'fsharp';
+  content: 'sass';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -887,14 +887,14 @@ body {
 }
 
 .img-11 {
-  background-image: url('assets/img/tlogos/git.png');
+  background-image: url('assets/img/tlogos/dotnet.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-11:after {
-  content: 'git';
+  content: 'dotnet';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -913,14 +913,14 @@ body {
 }
 
 .img-12 {
-  background-image: url('assets/img/tlogos/graphQL.png');
+  background-image: url('assets/img/tlogos/fsharp.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-12:after {
-  content: 'graphQL';
+  content: 'fsharp';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -939,14 +939,14 @@ body {
 }
 
 .img-13 {
-  background-image: url('assets/img/tlogos/haskell.png');
+  background-image: url('assets/img/tlogos/csharp.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-13:after {
-  content: 'haskell';
+  content: 'csharp';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -965,14 +965,14 @@ body {
 }
 
 .img-14 {
-  background-image: url('assets/img/tlogos/html.png');
+  background-image: url('assets/img/tlogos/dapper.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-14:after {
-  content: 'html';
+  content: 'dapper';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -991,14 +991,14 @@ body {
 }
 
 .img-15 {
-  background-image: url('assets/img/tlogos/javascript.png');
+  background-image: url('assets/img/tlogos/mongodb.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-15:after {
-  content: 'javascript';
+  content: 'mongodb';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1017,14 +1017,14 @@ body {
 }
 
 .img-16 {
-  background-image: url('assets/img/tlogos/linux.png');
+  background-image: url('assets/img/tlogos/mssql.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-16:after {
-  content: 'linux';
+  content: 'mssql';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1043,14 +1043,14 @@ body {
 }
 
 .img-17 {
-  background-image: url('assets/img/tlogos/mongodb.png');
+  background-image: url('assets/img/tlogos/mysql.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-17:after {
-  content: 'mongodb';
+  content: 'mysql';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1069,14 +1069,14 @@ body {
 }
 
 .img-18 {
-  background-image: url('assets/img/tlogos/mongoose.png');
+  background-image: url('assets/img/tlogos/python.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-18:after {
-  content: 'mongoose';
+  content: 'python';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1095,14 +1095,14 @@ body {
 }
 
 .img-19 {
-  background-image: url('assets/img/tlogos/mssql.png');
+  background-image: url('assets/img/tlogos/elm.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-19:after {
-  content: 'mssql';
+  content: 'elm';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1121,14 +1121,14 @@ body {
 }
 
 .img-20 {
-  background-image: url('assets/img/tlogos/mysql.png');
+  background-image: url('assets/img/tlogos/linux.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-20:after {
-  content: 'mysql';
+  content: 'linux';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1147,14 +1147,14 @@ body {
 }
 
 .img-21 {
-  background-image: url('assets/img/tlogos/nodejs.png');
+  background-image: url('assets/img/tlogos/vim.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-21:after {
-  content: 'nodejs';
+  content: 'vim';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1173,14 +1173,14 @@ body {
 }
 
 .img-22 {
-  background-image: url('assets/img/tlogos/python.png');
+  background-image: url('assets/img/tlogos/angular.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-22:after {
-  content: 'python';
+  content: 'angular';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1199,14 +1199,14 @@ body {
 }
 
 .img-23 {
-  background-image: url('assets/img/tlogos/react.png');
+  background-image: url('assets/img/tlogos/css.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-23:after {
-  content: 'react';
+  content: 'css';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1225,14 +1225,14 @@ body {
 }
 
 .img-24 {
-  background-image: url('assets/img/tlogos/redux.png');
+  background-image: url('assets/img/tlogos/flask.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-24:after {
-  content: 'redux';
+  content: 'flask';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1251,14 +1251,14 @@ body {
 }
 
 .img-25 {
-  background-image: url('assets/img/tlogos/sass.png');
+  background-image: url('assets/img/tlogos/haskell.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-25:after {
-  content: 'sass';
+  content: 'haskell';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1277,14 +1277,14 @@ body {
 }
 
 .img-26 {
-  background-image: url('assets/img/tlogos/typescript.png');
+  background-image: url('assets/img/tlogos/html.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-26:after {
-  content: 'typescript';
+  content: 'html';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -1303,14 +1303,14 @@ body {
 }
 
 .img-27 {
-  background-image: url('assets/img/tlogos/vim.png');
+  background-image: url('assets/img/tlogos/git.png');
   background-size: cover;
   background-position: center;
   position: relative;
   backface-visibility: hidden;
 }
 .img-27:after {
-  content: 'vim';
+  content: 'git';
   color: #f7f7f7;
   position: absolute;
   top: 50%;
@@ -3409,4 +3409,20 @@ body {
   .tech__explain {
     text-align: center;
   }
+}
+
+.tools {
+  padding: 6rem 5rem;
+  background-color: #ddd;
+}
+.tools__row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tools__list {
+  border: 1px dashed blue;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
