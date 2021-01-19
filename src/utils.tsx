@@ -67,6 +67,13 @@ export const identity = (a: any) => a;
 export const prop = curry((p: string, obj: any) => obj[p]);
 
 /**
+ *  objProp :: Object -> String -> a
+ */
+export const objProp = curry((obj: any, property: string) => {
+  return prop(property, obj);
+});
+
+/**
  *  add :: a -> b -> a + b
  */
 export const add = curry((a: any, b: any) => a + b);
@@ -192,6 +199,11 @@ export function safeGet<T>(entity: T) {
 export const randomString = () => {
   return Math.random().toString(36).substring(7);
 };
+
+/**
+ *  toLower :: string -> string
+ */
+export const toLower = (str: string) => str.toLowerCase();
 
 export class Maybe {
   $value: any;

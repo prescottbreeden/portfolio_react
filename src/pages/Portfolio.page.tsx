@@ -4,6 +4,7 @@ import powder from './../assets/img/powder_desktop.png';
 import casino31 from './../assets/img/casino31.png';
 import ultimateFan from './../assets/img/ultimate_fan.png';
 import { Icon } from '../components/Icon.component';
+import { Hexagon } from '../components/Hexagon.component';
 
 interface PortfolioProps {}
 export const Portfolio: React.FC<PortfolioProps> = () => {
@@ -66,18 +67,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-23">
-                    <h4 className="site__container--tool-name">CSS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-26">
-                    <h4 className="site__container--tool-name">HTML</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">JavaScript</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-35">
-                    <h4 className="site__container--tool-name">jQuery</h4>
-                  </div>
+                  <Hexagon name="CSS" />
+                  <Hexagon name="HTML" />
+                  <Hexagon name="JavaScript" />
+                  <Hexagon name="jQuery" />
                 </div>
               </div>
               <div className="more__container">
@@ -85,9 +78,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Back-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-37">
-                    <h4 className="site__container--tool-name">PHP</h4>
-                  </div>
+                  <Hexagon name="PHP" />
                 </div>
               </div>
               <div className="more__container">
@@ -95,9 +86,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Database</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-17">
-                    <h4 className="site__container--tool-name">MySQL</h4>
-                  </div>
+                  <Hexagon name="MySQL" />
                 </div>
               </div>
               <div className="more__container">
@@ -105,15 +94,9 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Dev Tools</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-33">
-                    <h4 className="site__container--tool-name">GitHub</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-10">
-                    <h4 className="site__container--tool-name">SASS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-21">
-                    <h4 className="site__container--tool-name">Vim</h4>
-                  </div>
+                  <Hexagon name="GitHub" />
+                  <Hexagon name="SASS" />
+                  <Hexagon name="Vim" />
                 </div>
               </div>
               <div className="more__container">
@@ -121,15 +104,9 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Server</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-29">
-                    <h4 className="site__container--tool-name">Apache</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-30">
-                    <h4 className="site__container--tool-name">AWS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-41">
-                    <h4 className="site__container--tool-name">Ubuntu</h4>
-                  </div>
+                  <Hexagon name="Apache" />
+                  <Hexagon name="AWs" />
+                  <Hexagon name="Ubuntu" />
                 </div>
               </div>
             </div>
@@ -162,13 +139,6 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                 smooth user experience on various device sizes.
               </p>
               <p className="project__description--link">
-                {/* <a */}
-                {/*   title="Open link to Website" */}
-                {/*   href="http://13.58.172.1/" */}
-                {/*   target="_blank" */}
-                {/* > */}
-                {/*   Visit Website &rarr; */}
-                {/* </a> */}
                 <a
                   title="Open link to GitHub"
                   href="https://github.com/prescottbreeden/powder_angular"
@@ -194,15 +164,9 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-23">
-                    <h4 className="site__container--tool-name">CSS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-26">
-                    <h4 className="site__container--tool-name">HTML</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">JavaScript</h4>
-                  </div>
+                  <Hexagon name="CSS" />
+                  <Hexagon name="HTML" />
+                  <Hexagon name="JavaScript" />
                 </div>
               </div>
               <div className="more__container">
@@ -279,21 +243,11 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-31">
-                    <h4 className="site__container--tool-name">Bootstrap</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-23">
-                    <h4 className="site__container--tool-name">CSS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-26">
-                    <h4 className="site__container--tool-name">HTML</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">JavaScript</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-35">
-                    <h4 className="site__container--tool-name">jQuery</h4>
-                  </div>
+                  <Hexagon name="Bootstrap" />
+                  <Hexagon name="CSS" />
+                  <Hexagon name="HTML" />
+                  <Hexagon name="JavaScript" />
+                  <Hexagon name="jQuery" />
                 </div>
               </div>
               <div className="more__container">
@@ -301,12 +255,8 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Game API</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-13">
-                    <h4 className="site__container--tool-name">C#</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-11">
-                    <h4 className="site__container--tool-name">.NET Core</h4>
-                  </div>
+                  <Hexagon name="csharp" label="C#" />
+                  <Hexagon name="dotnet" label=".NET Core" />
                 </div>
               </div>
               <div className="more__container">
@@ -314,12 +264,8 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Card API</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">JavaScript</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-5">
-                    <h4 className="site__container--tool-name">Express</h4>
-                  </div>
+                  <Hexagon name="JavaScript" />
+                  <Hexagon name="Express" />
                 </div>
               </div>
               <div className="more__container">
@@ -327,18 +273,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Dev Tools</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-33">
-                    <h4 className="site__container--tool-name">GitHub</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-2">
-                    <h4 className="site__container--tool-name">Node.js</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-10">
-                    <h4 className="site__container--tool-name">SASS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-39">
-                    <h4 className="site__container--tool-name">VS Code</h4>
-                  </div>
+                  <Hexagon name="GitHub" />
+                  <Hexagon name="nodejs" label="Node.js" />
+                  <Hexagon name="SASS" />
+                  <Hexagon name="vscode" label="VS Code" />
                 </div>
               </div>
               <div className="more__container">
@@ -346,18 +284,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Servers</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-30">
-                    <h4 className="site__container--tool-name">AWS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-36">
-                    <h4 className="site__container--tool-name">Nginx</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-38">
-                    <h4 className="site__container--tool-name">Supervisor</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-41">
-                    <h4 className="site__container--tool-name">Ubuntu</h4>
-                  </div>
+                  <Hexagon name="AWS" />
+                  <Hexagon name="Nginx" />
+                  <Hexagon name="Supervisor" />
+                  <Hexagon name="Ubuntu" />
                 </div>
               </div>
             </div>
@@ -416,18 +346,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Front-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-23">
-                    <h4 className="site__container--tool-name">CSS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-26">
-                    <h4 className="site__container--tool-name">HTML</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-1">
-                    <h4 className="site__container--tool-name">JavaScript</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-35">
-                    <h4 className="site__container--tool-name">jQuery</h4>
-                  </div>
+                  <Hexagon name="CSS" />
+                  <Hexagon name="HTML" />
+                  <Hexagon name="JavaScript" />
+                  <Hexagon name="jQuery" />
                 </div>
               </div>
               <div className="more__container">
@@ -435,12 +357,8 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Back-End</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-18">
-                    <h4 className="site__container--tool-name">Python</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-32">
-                    <h4 className="site__container--tool-name">Django</h4>
-                  </div>
+                  <Hexagon name="Python" />
+                  <Hexagon name="Django" />
                 </div>
               </div>
               <div className="more__container">
@@ -448,9 +366,7 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Database</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-40">
-                    <h4 className="site__container--tool-name">SQLite</h4>
-                  </div>
+                  <Hexagon name="SQLite" />
                 </div>
               </div>
               <div className="more__container">
@@ -458,18 +374,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Dev Tools</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-33">
-                    <h4 className="site__container--tool-name">GitHub</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-2">
-                    <h4 className="site__container--tool-name">Node.js</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-10">
-                    <h4 className="site__container--tool-name">SASS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-21">
-                    <h4 className="site__container--tool-name">Vim</h4>
-                  </div>
+                  <Hexagon name="Github" />
+                  <Hexagon name="nodejs" label="Node.js" />
+                  <Hexagon name="SASS" />
+                  <Hexagon name="vim" />
                 </div>
               </div>
               <div className="more__container">
@@ -477,18 +385,10 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
                   <h3>Server</h3>
                 </div>
                 <div className="project__tech-row show-text">
-                  <div className="site__container--tool tool-img-30">
-                    <h4 className="site__container--tool-name">AWS</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-36">
-                    <h4 className="site__container--tool-name">Nginx</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-34">
-                    <h4 className="site__container--tool-name">Gunicorn</h4>
-                  </div>
-                  <div className="site__container--tool tool-img-41">
-                    <h4 className="site__container--tool-name">Ubuntu</h4>
-                  </div>
+                  <Hexagon name="AWS" />
+                  <Hexagon name="Nginx" />
+                  <Hexagon name="Gunicorn" />
+                  <Hexagon name="Ubuntu" />
                 </div>
               </div>
             </div>
