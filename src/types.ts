@@ -12,3 +12,22 @@ export type IconDatum = {
 export type IconHashTable = {
   [key: string]: IconDatum;
 };
+
+export type ProjectData = {
+  description: string;
+  id: any;
+  projectName: string;
+  img: any;
+  builtWith?: BuiltWith[];
+  sourceCodeLink?: string;
+};
+
+export type BuiltWith = {
+  title: string;
+  tech: HexagonProps[];
+};
+
+export type HexagonProps = {
+  name: string;
+  label?: string;
+};
