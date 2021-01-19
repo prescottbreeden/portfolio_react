@@ -1,72 +1,71 @@
 @mixin center-element {
-    postiion: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  postiion: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin rotate-start {
-
 }
 @mixin rotate-null {
-
 }
 
 @mixin rotate-one {
-    transform:  
-        translateX(-.2rem) 
-        translateY(12.7rem) 
-        rotateX(45deg) 
-        rotateY(26deg) 
-        rotateZ(62deg);
+  transform: translateX(-0.2rem) translateY(12.7rem) rotateX(45deg)
+    rotateY(26deg) rotateZ(62deg);
 }
 
 @mixin rotate-two {
-    transform:  
-        translateX(-200px) 
-        translateY(-250px) 
-        rotateX(47deg) 
-        rotateY(26deg) 
-        rotateZ(62deg);
+  transform: translateX(-200px) translateY(-250px) rotateX(47deg) rotateY(26deg)
+    rotateZ(62deg);
 }
 
 @mixin rotate-max {
-    transform: 
-        rotateX(30deg) 
-        rotateY(-300deg) 
-        rotateZ(700deg);
+  transform: rotateX(30deg) rotateY(-300deg) rotateZ(700deg);
 }
 
 @mixin cube-interior-bg-props($file) {
-    background-image: url('../src/assets/#{$file}.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../src/assets/#{$file}.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @mixin cube-size($size) {
-    height: $size;
-    width: $size;
+  height: $size;
+  width: $size;
 }
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content }; // 600px
-    }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.75em) { @content }; // 900px
-    }
-    @if $breakpoint == tab-med {
-        @media only screen and (max-width: 65.625em) { @content }; // 1050px
-    }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content }; // 1200px
-    }
-	@if $breakpoint == width800 {
-		@media only screen and (max-width: 50rem) { @content };
-	}
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content }; // 1800px
-    }
-}
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.75em) {
+      @content;
+    } // 900px
+  }
+  @if $breakpoint == tab-med {
+    @media only screen and (max-width: 65.625em) {
+      @content;
+    } // 1050px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
 
+  @if $breakpoint == width800 {
+    @media only screen and (max-width: 50rem) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } // 1800px
+  }
+}

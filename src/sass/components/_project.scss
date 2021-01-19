@@ -1,0 +1,127 @@
+.project {
+  margin-bottom: 6rem;
+
+  &__header {
+    margin-top: 3rem;
+    padding: 0 3rem;
+    border-top: 1px solid $color-black-light;
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      padding: 0;
+    }
+
+    &--heading-box {
+      width: 40%;
+      text-align: center;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+
+    &--heading {
+      background-color: $color-black-light;
+      color: $color-white;
+      display: inline-block;
+      padding: 0 2rem;
+      border-radius: 0 0 4px 4px;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      @include respond(phone) {
+        width: 100%;
+        border-radius: 0;
+        line-height: 4rem;
+      }
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__technology {
+    width: 100%;
+  }
+
+  &__container {
+    margin-top: 3rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &--empty {
+      width: 60%;
+
+      @include respond(phone) {
+        width: 0%;
+      }
+    }
+  }
+
+  &__image {
+    width: 45%;
+    height: auto;
+    margin-right: 2rem;
+    animation: appear 0.5s linear 1;
+    transition: all 0.2s;
+
+    @include respond(phone) {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0.3rem;
+    color: $color-primary;
+    text-decoration: none;
+    border-bottom: 3px dashed $color-primary;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: all 0.2s;
+    display: inline-block;
+
+    &:hover {
+      background-color: rgba($color-primary, 0.5);
+      color: $color-white;
+    }
+
+    &:focus {
+      &:-moz-focusring {
+        // outline: 1px solid $color-white;
+        outline: 5px auto -webkit-focus-ring-color;
+      }
+      // outline: 1px dotted #212121;
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+  }
+}
