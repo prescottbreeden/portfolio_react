@@ -12,7 +12,6 @@
   }
 
   &__list {
-    border: 1px dashed blue;
     width: 30rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -35,6 +34,18 @@
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+  }
+
+  &__knowledge-portfolio {
+    padding-top: 2rem;
+    background-color: $color-grey-light;
+    text-align: center;
+
+    &--rule {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-primary;
     }
   }
 }

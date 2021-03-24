@@ -1,11 +1,9 @@
 import React from 'react';
-import { HEXAGONS } from '../constants/hexagon.constants';
 import { HexagonProps } from '../types';
-import { compose, either, identity, objProp, toLower } from '../utils';
+import { either, identity } from '../utils';
 
 export const Hexagon: React.FC<HexagonProps> = ({ label, name }) => {
-  const hex = compose(objProp(HEXAGONS), toLower);
-  const className = 'site__container--tool ' + hex(name);
+  const className = `site__container--tool tool-img-${name}`;
   return (
     <>
       <div className={className}>
