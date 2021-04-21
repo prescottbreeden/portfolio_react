@@ -10,6 +10,9 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
     <>
       <section className="portfolio">
         <h2 className="portfolio__header">What I've Built</h2>
+        <p className="u-center">
+          A mixture of personal projects and consulting work.
+        </p>
         {PROJECTS.map(createProject)}
       </section>
     </>
