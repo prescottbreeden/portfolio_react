@@ -49,6 +49,11 @@ export const LANGUAGES = {
       'R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.',
     link: 'https://en.wikipedia.org/wiki/R_(programming_language)',
   },
+  scala: {
+    description:
+      "Scala is a general-purpose programming language providing support for both object-oriented programming and functional programming. The language has a strong static type system. Designed to be concise, many of Scala's design decisions are aimed to address criticisms of Java.",
+    link: 'https://en.wikipedia.org/wiki/Scala_(programming_language)',
+  },
   typescript: {
     description:
       'TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. TypeScript is designed for development of large applications and transcompiles to JavaScript.',
@@ -158,6 +163,11 @@ export const BACKEND_TECH = {
 };
 
 export const DEV_TOOLS = {
+  devops: {
+    description:
+      'Azure DevOps Server is a Microsoft product that provides version control, reporting, requirements management, project management, automated builds, testing and release management capabilities. It covers the entire application lifecycle, and enables DevOps capabilities.',
+    link: 'https://en.wikipedia.org/wiki/Azure_DevOps_Server',
+  },
   electron: {
     description:
       'Electron is a framework that enables you to create desktop applications with JavaScript, HTML, and CSS. These applications can then be packaged to run directly on macOS, Windows, or Linux, or distributed via the Mac App Store or the Microsoft Store.',
@@ -215,11 +225,11 @@ export const All_TECH = [
   'firebase',
   'flask',
   'fsharp',
-  'github',
   'git',
+  'github',
   'graphQL',
-  'gunicorn2',
   'gunicorn',
+  'gunicorn2',
   'haskell',
   'heroku',
   'html',
@@ -239,10 +249,10 @@ export const All_TECH = [
   'pm2',
   'postman',
   'python',
+  'r',
   'react',
   'redis',
   'redux',
-  'r',
   'sass',
   'scala',
   'sqlalchemy',
@@ -260,31 +270,31 @@ export const All_TECH = [
 
 export const TECH_FAVE = [
   //languages
-  'javascript',
-  'typescript',
-  'python',
-  'lisp',
   'fsharp',
-  'elm',
   'haskell',
+  'javascript',
+  'lisp',
+  'python',
+  'scala',
+  'typescript',
 
   // frameworks
-  'react',
-  'nodejs',
-  'flask',
   'dotnet',
+  'flask',
+  'nodejs',
+  'react',
 
   // db
+  'graphQL',
   'mongodb',
   'mysql',
-  'graphQL',
   'redis',
 
   // tools
+  'devops',
   'git',
+  'linux',
   'redux',
   'sass',
-  'oauth',
-  'linux',
   'vim',
 ];

@@ -40,7 +40,7 @@ export const HoneyComb: React.FC<HoneyCombProps> = () => {
                   onKeyPress={handleKeyPress(tech)}
                   tabIndex={0}
                 >
-                  <span className="transparent">${tech}</span>
+                  <span className="transparent">{tech}</span>
                 </p>
               </li>
             );

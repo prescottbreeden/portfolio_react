@@ -21,8 +21,8 @@ export const Tech: React.FC<TechProps> = (props) => {
       </div>
       <div className="tools__knowledge-portfolio">
         <p>
-          Programming is a craft like writing, painting or making music. Skill
-          and growth are a result of dedicated practice, not paid opportunity.
+          Programming is a craft like writing, painting or making music; where
+          skill and growth are the result of dedicated practice.
         </p>
       </div>
       <div className="tools__knowledge-portfolio">

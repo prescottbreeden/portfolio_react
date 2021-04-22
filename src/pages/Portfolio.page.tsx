@@ -1,11 +1,11 @@
 import React from 'react';
 import { Project } from '../components/Project.component';
 import { PROJECTS } from '../constants/projects.constants';
+import { ProjectData } from '../types';
+import { map } from '../utils';
 
 interface PortfolioProps {}
 export const Portfolio: React.FC<PortfolioProps> = () => {
-  const createProject = (proj: any) => React.createElement(Project, proj);
-
   return (
     <>
       <section className="portfolio">
@@ -13,7 +13,12 @@ export const Portfolio: React.FC<PortfolioProps> = () => {
         <p className="u-center">
           A mixture of personal projects and consulting work.
         </p>
-        {PROJECTS.map(createProject)}
+        {map(
+          (proj: ProjectData) => (
+            <Project {...proj} />
+          ),
+          PROJECTS
+        )}
       </section>
     </>
   );

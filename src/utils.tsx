@@ -37,10 +37,9 @@ export const scrollToAnchor = (
   if (!anchor) {
     window.scroll({ top: 0, behavior: 'smooth' });
   } else {
-    const divToFocus = document.getElementById(anchor);
-    if (divToFocus) {
-      scrollToElement(divToFocus, behavior);
-    }
+    maybe(document.getElementById(anchor)).map((divToFocus: HTMLElement) =>
+      scrollToElement(divToFocus, behavior)
+    );
   }
 };
 

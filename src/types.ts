@@ -15,7 +15,7 @@ export type IconHashTable = {
 
 export type ProjectData = {
   description: string;
-  id: any;
+  key: any;
   projectName: string;
   img: any;
   builtWith?: BuiltWith[];
@@ -23,6 +23,7 @@ export type ProjectData = {
 };
 
 export type BuiltWith = {
+  key: string;
   title: string;
   tech: HexagonProps[];
 };

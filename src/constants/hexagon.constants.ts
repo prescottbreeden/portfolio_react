@@ -11,6 +11,7 @@ import clojure from '../assets/img/tlogos/clojure.png';
 import csharp from '../assets/img/tlogos/csharp.png';
 import css from '../assets/img/tlogos/css.png';
 import dapper from '../assets/img/tlogos/dapper.png';
+import devops from '../assets/img/tlogos/devops.png';
 import django from '../assets/img/tlogos/django.png';
 import dotnet from '../assets/img/tlogos/dotnet.png';
 import electron from '../assets/img/tlogos/electron.png';
@@ -49,6 +50,7 @@ import redis from '../assets/img/tlogos/redis.png';
 import redux from '../assets/img/tlogos/redux.png';
 import sass from '../assets/img/tlogos/sass.png';
 import scala from '../assets/img/tlogos/scala.png';
+import socketio from '../assets/img/tlogos/socketio.png';
 import sqlalchemy from '../assets/img/tlogos/sqlalchemy.png';
 import sqlite from '../assets/img/tlogos/sqlite.png';
 import supervisor from '../assets/img/tlogos/supervisor.png';
@@ -73,6 +75,7 @@ export const images = {
   csharp,
   css,
   dapper,
+  devops,
   django,
   dotnet,
   electron,
@@ -111,6 +114,7 @@ export const images = {
   redux,
   sass,
   scala,
+  socketio,
   sqlalchemy,
   sqlite,
   supervisor,

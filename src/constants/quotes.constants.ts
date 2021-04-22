@@ -80,10 +80,10 @@ const connection = [
 ];
 
 export const QUOTES: any = {
-  respect,
-  growth,
+  connection,
   diversity,
+  growth,
   innovation,
   integrity,
-  connection,
+  respect,
 };

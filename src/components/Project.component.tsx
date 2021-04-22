@@ -1,19 +1,17 @@
 import React from 'react';
-import { ProjectData } from '../types';
-import { map, maybe, randomString } from '../utils';
-import { Hexagon } from './Hexagon.component';
+import { BuiltWith, ProjectData } from '../types';
 import { Icon } from './Icon.component';
+import { ProjectTech } from './ProjectTech.component';
+import { map } from '../utils';
 
 export const Project: React.FC<ProjectData> = ({
   builtWith,
   description,
-  id,
   img,
   projectName,
-  sourceCodeLink,
 }) => {
   return (
-    <React.Fragment key={id}>
+    <>
       <div className="project">
         <div className="project__header">
           <div className="project__header--heading-box">
@@ -36,56 +34,24 @@ export const Project: React.FC<ProjectData> = ({
               <span className="u-color-red">{projectName}</span>
               {description}
             </p>
-            <p className="project__description--link">
-              {sourceCodeLink ? (
-                <a
-                  title="Open link to GitHub"
-                  href="https://github.com/prescottbreeden/slotify"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  View Source Code &rarr;
-                </a>
-              ) : null}
-            </p>
           </div>
         </div>
-        <div onClick={() => null} id="slotify_button" className="more__button">
+        <div onClick={() => null} className="more__button">
           <div className="more__button--spacer"></div>
           <div className="more__button--box">
             <p className="more__button--box-text">Built With</p>
             <Icon className="more__button--box-icon" name="circleRight" />
           </div>
         </div>
-        <div id="slotify_tech" className="project__tech show-text">
-          <div id="slotify_html">
-            {maybe(builtWith)
-              .map(
-                map(({ title, tech }: any) => {
-                  return (
-                    <React.Fragment key={randomString()}>
-                      <div className="more__container">
-                        <div className="more__container--heading">
-                          <h3>{title}</h3>
-                        </div>
-                        <div className="project__tech-row show-text">
-                          {tech.map(({ label, name }: any) => {
-                            return (
-                              <React.Fragment key={randomString()}>
-                                <Hexagon name={name} label={label} />
-                              </React.Fragment>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </React.Fragment>
-                  );
-                })
-              )
-              .join()}
-          </div>
+        <div className="project__tech show-text">
+          {map(
+            (tech: BuiltWith) => (
+              <ProjectTech {...tech} />
+            ),
+            builtWith
+          )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };

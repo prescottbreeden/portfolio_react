@@ -374,6 +374,14 @@ body {
   animation: appear 0.25s 2.95s 1 ease-out forwards;
 }
 
+.tech__animate-60 {
+  animation: appear 0.25s 3s 1 ease-out forwards;
+}
+
+.tech__animate-61 {
+  animation: appear 0.25s 3.05s 1 ease-out forwards;
+}
+
 .tool-img-angular {
   background-image: url('assets/img/tlogos/angular.png');
   background-size: cover;
@@ -448,6 +456,14 @@ body {
 
 .tool-img-dapper {
   background-image: url('assets/img/tlogos/dapper.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-devops {
+  background-image: url('assets/img/tlogos/devops.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -752,6 +768,14 @@ body {
 
 .tool-img-scala {
   background-image: url('assets/img/tlogos/scala.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.tool-img-socketio {
+  background-image: url('assets/img/tlogos/socketio.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1152,6 +1176,37 @@ body {
 }
 
 .img-dapper:focus {
+  background-color: #ff9c67;
+  z-index: 1;
+}
+
+.img-devops {
+  background-image: url('assets/img/tlogos/devops.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+.img-devops:after {
+  content: 'devops';
+  color: #f7f7f7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.25rem 1rem;
+  width: 90%;
+  border-radius: 200px;
+  opacity: 0;
+}
+.img-devops:hover:after {
+  opacity: 1;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.img-devops:focus {
   background-color: #ff9c67;
   z-index: 1;
 }
@@ -2330,6 +2385,37 @@ body {
 }
 
 .img-scala:focus {
+  background-color: #ff9c67;
+  z-index: 1;
+}
+
+.img-socketio {
+  background-image: url('assets/img/tlogos/socketio.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  backface-visibility: hidden;
+}
+.img-socketio:after {
+  content: 'socketio';
+  color: #f7f7f7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.25rem 1rem;
+  width: 90%;
+  border-radius: 200px;
+  opacity: 0;
+}
+.img-socketio:hover:after {
+  opacity: 1;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.img-socketio:focus {
   background-color: #ff9c67;
   z-index: 1;
 }
@@ -4324,6 +4410,7 @@ body {
 
 .transparent {
   color: transparent;
+  user-select: none;
 }
 
 .tech {
