@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0ee214b7.chunk.css",
+    "main.js": "/static/js/main.c9ffc89d.chunk.js",
+    "main.js.map": "/static/js/main.c9ffc89d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e50058cc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e50058cc.js.map",
+    "static/js/2.32ee94c1.chunk.js": "/static/js/2.32ee94c1.chunk.js",
+    "static/js/2.32ee94c1.chunk.js.map": "/static/js/2.32ee94c1.chunk.js.map",
+    "static/js/3.c8711936.chunk.js": "/static/js/3.c8711936.chunk.js",
+    "static/js/3.c8711936.chunk.js.map": "/static/js/3.c8711936.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0ee214b7.chunk.css.map": "/static/css/main.0ee214b7.chunk.css.map",
+    "static/js/2.32ee94c1.chunk.js.LICENSE.txt": "/static/js/2.32ee94c1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/yarn.d5ddccce.png",
+    "static/media/casino31.2abffbb7.png": "/static/media/casino31.2abffbb7.png",
+    "static/media/cube_primary.38a0c35d.png": "/static/media/cube_primary.38a0c35d.png",
+    "static/media/cube_red.b1525d66.png": "/static/media/cube_red.b1525d66.png",
+    "static/media/cube_teal.f52b33bb.png": "/static/media/cube_teal.f52b33bb.png",
+    "static/media/powder_desktop.1a27d2eb.png": "/static/media/powder_desktop.1a27d2eb.png",
+    "static/media/slotify.7746c503.png": "/static/media/slotify.7746c503.png",
+    "static/media/ultimate_fan.72d7b8e9.png": "/static/media/ultimate_fan.72d7b8e9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e50058cc.js",
+    "static/js/2.32ee94c1.chunk.js",
+    "static/css/main.0ee214b7.chunk.css",
+    "static/js/main.c9ffc89d.chunk.js"
+  ]
+}
