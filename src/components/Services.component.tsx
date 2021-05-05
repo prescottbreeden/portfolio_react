@@ -25,8 +25,8 @@ export const Services: React.FC<ServicesProps> = () => {
               <div className="cube__text">
                 <ul className="services--list">
                   <li>SPAs & Static Content</li>
-                  <li>Responsive Design & Animations</li>
-                  <li>Accessibility</li>
+                  <li>Styling & Animations</li>
+                  <li>Responsive Design & Accessibility</li>
                 </ul>
               </div>
             </div>
@@ -42,9 +42,9 @@ export const Services: React.FC<ServicesProps> = () => {
               </div>
               <div className="cube__text">
                 <ul className="services--list">
-                  <li>REST & GraphQL APIs</li>
+                  <li>REST & GraphQL</li>
                   <li>Modeling & Data Access</li>
-                  <li>Microservices & Continuous Delivery</li>
+                  <li>Monoliths & Microservices</li>
                 </ul>
               </div>
             </div>
@@ -62,7 +62,7 @@ export const Services: React.FC<ServicesProps> = () => {
                 <ul className="services--list">
                   <li>Database Design</li>
                   <li>SQL, NoSQL & Graph Databases</li>
-                  <li>Distributed Systems</li>
+                  <li>Document & Relational Mapping</li>
                 </ul>
               </div>
             </div>

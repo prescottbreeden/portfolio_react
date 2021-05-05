@@ -17,7 +17,7 @@ export type ProjectData = {
   description: string;
   key: any;
   projectName: string;
-  img: any;
+  img?: any;
   builtWith?: BuiltWith[];
   sourceCodeLink?: string;
 };

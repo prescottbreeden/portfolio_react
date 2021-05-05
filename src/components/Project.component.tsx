@@ -20,15 +20,17 @@ export const Project: React.FC<ProjectData> = ({
           <div className="project__container--empty"></div>
         </div>
         <div className="project__container">
-          <div className="project__container--desktop">
-            <div className="project__desktop">
-              <img
-                src={img}
-                alt="project web page"
-                className="project__desktop--img"
-              />
+          {img ? (
+            <div className="project__container--desktop">
+              <div className="project__desktop">
+                <img
+                  src={img}
+                  alt="project web page"
+                  className="project__desktop--img"
+                />
+              </div>
             </div>
-          </div>
+          ) : null}
           <div className="project__container--text-box">
             <p className="project__description--text">
               <span className="u-color-red">{projectName}</span>

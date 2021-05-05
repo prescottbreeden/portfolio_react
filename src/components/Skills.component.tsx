@@ -18,10 +18,10 @@ export const Tools: React.FC<ToolsProps> = (props) => {
           </div>
           <div className="tools__list">
             <h2 className="tools__list__title">Languages</h2>
-            <p>C# / F#</p>
+            <p>Common Lisp</p>
+            <p>F# / C#</p>
             <p>Haskell</p>
             <p>JavaScript</p>
-            <p>Common Lisp</p>
             <p>Python</p>
             <p>Scala</p>
             <p>TypeScript</p>
@@ -64,9 +64,9 @@ export const Tools: React.FC<ToolsProps> = (props) => {
           </div>
           <div className="tools__list">
             <h2 className="tools__list__title">Dev Tools</h2>
-            <p>AWS</p>
-            <p>Azure / DevOps</p>
-            <p>Github</p>
+            <p>Azure / AWS</p>
+            <p>DevOps / Jira / GitHub</p>
+            <p>Docker</p>
             <p>Linux / Bash / Vim</p>
             <p>Postman</p>
           </div>

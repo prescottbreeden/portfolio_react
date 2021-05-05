@@ -192,13 +192,50 @@ const ULTIMATE_FAN: BuiltWith[] = [
     ],
   },
 ];
+const EMMA: BuiltWith[] = [
+  {
+    key: 'emma__front-end',
+    title: 'front-end',
+    tech: [
+      { name: 'react', label: 'React' },
+      { name: 'redux', label: 'Redux' },
+      { name: 'sass', label: 'SASS' },
+      { name: 'typescript', label: 'TypeScript' },
+      { name: 'testinglibrary', label: 'Testing Library' },
+    ],
+  },
+  {
+    key: 'emma__back-end',
+    title: 'back-end',
+    tech: [
+      { name: 'typescript', label: 'TypeScript' },
+      { name: 'nodejs', label: 'Node.js' },
+      { name: 'express', label: 'Express.js' },
+      { name: 'mongodb', label: 'MongoDB' },
+      { name: 'mongoose', label: 'Mongoose.js' },
+    ],
+  },
+];
+export const LISP = [
+  {
+    key: 'lisp__back-end',
+    title: 'back-end',
+    tech: [{ name: 'lisp', label: 'Lisp' }],
+  },
+];
 
 export const PROJECTS: ProjectData[] = [
   {
     description:
+      ' is a web application that helps parents of children with cCMV find out more information and get help from experienced parents for their child. This application is an ongoing work and not only does it feel wonderful to work on such an important application in my spare time but all the volunteers working on it are some of my absolute favorite people.',
+    key: 'emma',
+    projectName: 'Emma',
+    builtWith: EMMA,
+  },
+  {
+    description:
       ' is an independent seaport located in Tacoma, Washington. I was hired to extend their ability to display user experience times at each facility in real time. Their previous solution involved displaying data in iFrames being served from PowerBI, however this suffered a performance issue where updates could sometimes lag from minutes to hours. To achieve their goals, I implemented a node server running Socket.io that opens a tunnel to any connected clients and pushes updates directly every 60 seconds (no refreshing necessary). Data is cached on the server, so in the event of a blip in their distributed data, the server can fall back to the last successful query until a new query is successful. To provide additional resiliance, only one successful query (application-wide) is necessary to update all connected users.',
     key: 'pot',
-    img: slotify,
     projectName: 'The Port of Tacoma',
     builtWith: POT,
   },
@@ -206,7 +243,6 @@ export const PROJECTS: ProjectData[] = [
     description:
       ' is a web application that handles all of the school, student, program, and grant data for the entire state. This project was a ground-up rebuild of their previous 20 year old system and grew to nearly than 250k lines of code. I designed and implemented the majority of the front-end architecture including: the component library, the validation library (which is now open source), the navigation, the trays and side navs, the accessibility controls, and utilities. I also established our practices around SASS, Redux, and unit-testing. In the API, I primarily helped build and extend the reporting feature as well as generate scripts to remove redundancy during implementations and improve consistency across hundreds of files. I feel thankful for the opportunity to build such an important application for thousands of educators.',
     key: 'cccs',
-    img: slotify,
     projectName: 'Colorado Community College System',
     builtWith: CCCS,
   },
@@ -214,17 +250,22 @@ export const PROJECTS: ProjectData[] = [
     description:
       ' is an NPM library for creating modular, function-based validation schemas that are de-coupled from their surrounding implementations. I wrote this package for a project with the Colorado Community College System that involved thousands of forms to manage all school, student, and grant data for the entire state. There simply was no decent composable validation solution that would allow for easy unit testing as well as re-use outside the context of forms (such as during application submission pages). Currently the library has implementations for the validations in VanillaJS for Node applications and in React as a React Hook.',
     key: 'deformed',
-    img: slotify,
     projectName: '@De-Formed Validations',
     builtWith: DE_FORMED,
   },
   {
     description:
-      ' is a desktop application to import tickets from Azure DevOps to create a manageable TODO list with time tracking functionality. After several months working intensely with DevOps on a client project, I wanted a way to better track my work and efforts and was inspired to build this over a weekend. CSV files exported from Azure DevOps and dropped into the application to populate tickets with detailed information, such as ticket numbers, descriptions, and other meta data.',
+      ' is a desktop application to import tickets from Azure DevOps to create a manageable TODO list with time tracking functionality. After several months working intensely with DevOps on a client project, I wanted a way to better track my work and efforts and was inspired to build this over a weekend. CSV files exported from Azure DevOps and dropped into the application to populate tickets with detailed information, such as ticket numbers, descriptions, and other meta data. I am currently working on expanding this into a Teams App for my company in my spare time.',
     key: 'mydevbuddy',
-    img: slotify,
     projectName: 'My Dev Buddy',
     builtWith: MY_DEV_BUDDY,
+  },
+  {
+    description:
+      ' is a server is written in Lisp using AllegroServe and includes an MP3 database written in Lisp, file IO, and ID3 parsing to create a server for MP3 streaming. My hope is to eventually deploy this server and connect it to Slotify. While somehwat of an impractical personal project, Lisp has probably taught me more about programming than any other language and continues to find new lessons to teach me every time I pick it back up. Other projects in Lisp I have played around with include static websites, an HTML generation library, a SPAM filter, a unit-testing framework, a portable shell, and some really silly old-school text adventure games.',
+    key: 'lisp',
+    projectName: 'Lisp Shoutcast Server',
+    builtWith: LISP,
   },
   {
     description:
